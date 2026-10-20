@@ -16,13 +16,13 @@ export const LegalPage: React.FC<{ type: 'privacy' | 'terms' | 'cancellation' | 
     return (
       <div className="w-full bg-stone-50 py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
-          <div className="bg-gradient-to-r from-slate-900 via-amber-950 to-slate-900 text-white p-8 sm:p-12 rounded-3xl relative overflow-hidden shadow-xl">
+          <div className="bg-gradient-to-r from-slate-900 via-blue-950 to-slate-900 text-white p-8 sm:p-12 rounded-3xl relative overflow-hidden shadow-xl">
             <div className="absolute inset-0 bg-cover bg-center opacity-25" style={{ backgroundImage: `url('images/hero/rajasthan-banner-wide.webp')` }} />
-            <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-amber-950/75 to-slate-900/90" />
+            <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-blue-950/75 to-slate-900/90" />
             <div className="relative z-10 max-w-3xl space-y-3">
               <h1 className="text-2xl sm:text-4xl font-bold font-serif">HTML Sitemap Directory</h1>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                Browse the complete network of all pages and tour packages offered by Organise My Trip.
+                Browse the complete network of all pages and tour packages offered by Vanshika Tour & Travel.
               </p>
             </div>
           </div>
@@ -32,29 +32,29 @@ export const LegalPage: React.FC<{ type: 'privacy' | 'terms' | 'cancellation' | 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 pt-6 border-t border-stone-100">
               {/* Main Hubs */}
               <div className="space-y-3">
-                <h3 className="font-bold text-xs uppercase tracking-wider text-amber-800">Main Pages</h3>
+                <h3 className="font-bold text-xs uppercase tracking-wider text-blue-800">Main Pages</h3>
                 <ul className="space-y-1.5 text-xs text-slate-600">
-                  <li><button onClick={() => navigate('/')} className="hover:text-amber-800">Home Page</button></li>
-                  <li><button onClick={() => navigate('/packages')} className="hover:text-amber-800">Tour Packages Hub</button></li>
-                  <li><button onClick={() => navigate('/activities')} className="hover:text-amber-800">Experiences & Activities</button></li>
-                  <li><button onClick={() => navigate('/taxi-service')} className="hover:text-amber-800">Rajasthan Taxi Service</button></li>
-                  <li><button onClick={() => navigate('/rajasthan-tour-taxi')} className="hover:text-amber-800">Taxi Route Directory</button></li>
-                  <li><button onClick={() => navigate('/rajasthan-car-rental')} className="hover:text-amber-800">Car Rental with Driver</button></li>
-                  <li><button onClick={() => navigate('/blog')} className="hover:text-amber-800">Travel Guide & Blog</button></li>
-                  <li><button onClick={() => navigate('/b2b-rajasthan-dmc')} className="hover:text-amber-800">B2B DMC Travel Desk</button></li>
-                  <li><button onClick={() => navigate('/about-us')} className="hover:text-amber-800">About Organise My Trip</button></li>
-                  <li><button onClick={() => navigate('/contact-us')} className="hover:text-amber-800">Contact Us</button></li>
-                  <li><button onClick={() => navigate('/admin')} className="hover:text-amber-800 text-amber-700 font-bold">Admin Inquiry Portal</button></li>
+                  <li><button onClick={() => navigate('/')} className="hover:text-blue-800">Home Page</button></li>
+                  <li><button onClick={() => navigate('/packages')} className="hover:text-blue-800">Tour Packages Hub</button></li>
+                  <li><button onClick={() => navigate('/activities')} className="hover:text-blue-800">Experiences & Activities</button></li>
+                  <li><button onClick={() => navigate('/taxi-service')} className="hover:text-blue-800">Rajasthan Taxi Service</button></li>
+                  <li><button onClick={() => navigate('/rajasthan-tour-taxi')} className="hover:text-blue-800">Taxi Route Directory</button></li>
+                  <li><button onClick={() => navigate('/rajasthan-car-rental')} className="hover:text-blue-800">Car Rental with Driver</button></li>
+                  <li><button onClick={() => navigate('/blog')} className="hover:text-blue-800">Travel Guide & Blog</button></li>
+                  <li><button onClick={() => navigate('/b2b-rajasthan-dmc')} className="hover:text-blue-800">B2B DMC Travel Desk</button></li>
+                  <li><button onClick={() => navigate('/about-us')} className="hover:text-blue-800">About Vanshika Tour & Travel</button></li>
+                  <li><button onClick={() => navigate('/contact-us')} className="hover:text-blue-800">Contact Us</button></li>
+                  <li><button onClick={() => navigate('/admin')} className="hover:text-blue-800 text-blue-700 font-bold">Admin Inquiry Portal</button></li>
                 </ul>
               </div>
 
               {/* Destinations */}
               <div className="space-y-3">
-                <h3 className="font-bold text-xs uppercase tracking-wider text-amber-800">City Guides</h3>
+                <h3 className="font-bold text-xs uppercase tracking-wider text-blue-800">City Guides</h3>
                 <ul className="space-y-1.5 text-xs text-slate-600">
                   {DESTINATIONS.map(d => (
                     <li key={d.id}>
-                      <button onClick={() => navigate(`/tour-by-destination/${d.slug}`)} className="hover:text-amber-800">
+                      <button onClick={() => navigate(`/tour-by-destination/${d.slug}`)} className="hover:text-blue-800">
                         {d.name} Travel Guide
                       </button>
                     </li>
@@ -64,11 +64,11 @@ export const LegalPage: React.FC<{ type: 'privacy' | 'terms' | 'cancellation' | 
 
               {/* SEO Landing Clusters */}
               <div className="space-y-3">
-                <h3 className="font-bold text-xs uppercase tracking-wider text-amber-800">SEO Tour Landings</h3>
+                <h3 className="font-bold text-xs uppercase tracking-wider text-blue-800">SEO Tour Landings</h3>
                 <ul className="space-y-1.5 text-xs text-slate-600">
                   {SEO_LANDINGS.map(s => (
                     <li key={s.slug}>
-                      <button onClick={() => navigate(`/rajasthan-tour-packages/${s.slug}`)} className="hover:text-amber-800 text-left">
+                      <button onClick={() => navigate(`/rajasthan-tour-packages/${s.slug}`)} className="hover:text-blue-800 text-left">
                         {s.title}
                       </button>
                     </li>
@@ -78,11 +78,11 @@ export const LegalPage: React.FC<{ type: 'privacy' | 'terms' | 'cancellation' | 
 
               {/* Popular Packages */}
               <div className="space-y-3">
-                <h3 className="font-bold text-xs uppercase tracking-wider text-amber-800">Top Packages</h3>
+                <h3 className="font-bold text-xs uppercase tracking-wider text-blue-800">Top Packages</h3>
                 <ul className="space-y-1.5 text-xs text-slate-600">
                   {TOUR_PACKAGES.slice(0, 10).map(p => (
                     <li key={p.id}>
-                      <button onClick={() => navigate(`/package-detail/${p.slug}`)} className="hover:text-amber-800 text-left line-clamp-1">
+                      <button onClick={() => navigate(`/package-detail/${p.slug}`)} className="hover:text-blue-800 text-left line-clamp-1">
                         {p.title}
                       </button>
                     </li>
@@ -99,7 +99,7 @@ export const LegalPage: React.FC<{ type: 'privacy' | 'terms' | 'cancellation' | 
   const contentMap = {
     privacy: {
       title: 'Privacy Policy',
-      subtitle: 'How Organise My Trip handles traveler data and communication privacy.',
+      subtitle: 'How Vanshika Tour & Travel handles traveler data and communication privacy.',
       sections: [
         {
           heading: '1. Information We Collect',
@@ -107,7 +107,7 @@ export const LegalPage: React.FC<{ type: 'privacy' | 'terms' | 'cancellation' | 
         },
         {
           heading: '2. Zero Data Selling Commitment',
-          body: 'Organise My Trip never sells, rents, or licenses your personal or travel contact information to third-party marketing firms or external agencies. Data is restricted strictly to assigned chauffeurs and verified partner hotels.'
+          body: 'Vanshika Tour & Travel never sells, rents, or licenses your personal or travel contact information to third-party marketing firms or external agencies. Data is restricted strictly to assigned chauffeurs and verified partner hotels.'
         },
         {
           heading: '3. WhatsApp Communication',
@@ -163,9 +163,9 @@ export const LegalPage: React.FC<{ type: 'privacy' | 'terms' | 'cancellation' | 
   return (
     <div className="w-full bg-stone-50 py-12">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 space-y-6">
-        <div className="bg-gradient-to-r from-slate-900 via-amber-950 to-slate-900 text-white p-8 sm:p-12 rounded-3xl relative overflow-hidden shadow-xl">
+        <div className="bg-gradient-to-r from-slate-900 via-blue-950 to-slate-900 text-white p-8 sm:p-12 rounded-3xl relative overflow-hidden shadow-xl">
           <div className="absolute inset-0 bg-cover bg-center opacity-25" style={{ backgroundImage: `url('${bannerImage}')` }} />
-          <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-amber-950/75 to-slate-900/90" />
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-blue-950/75 to-slate-900/90" />
           <div className="relative z-10 space-y-2">
             <h1 className="text-2xl sm:text-3xl font-serif font-bold text-white">{doc.title}</h1>
             <p className="text-xs text-slate-300">{doc.subtitle}</p>
@@ -183,7 +183,7 @@ export const LegalPage: React.FC<{ type: 'privacy' | 'terms' | 'cancellation' | 
           </div>
 
           <div className="pt-6 border-t border-stone-100 text-xs text-slate-400">
-            Last Updated: January 2026 · Organise My Trip (Jaipur · Rajasthan · India)
+            Last Updated: January 2026 · Vanshika Tour & Travel (Jaipur · Rajasthan · India)
           </div>
         </div>
       </div>

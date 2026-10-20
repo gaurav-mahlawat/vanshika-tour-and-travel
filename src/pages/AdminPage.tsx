@@ -229,7 +229,7 @@ export const AdminPage: React.FC = () => {
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
     link.href = url;
-    link.setAttribute('download', `organise-my-trip-leads-${new Date().toISOString().slice(0, 10)}.csv`);
+    link.setAttribute('download', `vanshika-tour-and-travel-leads-${new Date().toISOString().slice(0, 10)}.csv`);
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -238,9 +238,9 @@ export const AdminPage: React.FC = () => {
   const addSampleLead = () => {
     addEnquiry({
       type: 'tour',
-      fullName: 'Vikram Malhotra',
-      email: 'vikram.m@gmail.com',
-      phone: '+91 98765 43210',
+      fullName: 'Sample Lead',
+      email: 'sample@example.com',
+      phone: '+91 90000 00000',
       travelDate: '2026-11-15',
       adults: 2,
       children: 1,
@@ -322,7 +322,7 @@ export const AdminPage: React.FC = () => {
     const value = formDraft[field.key];
     const label = (
       <label className="text-[11px] font-bold text-slate-600 uppercase tracking-wide block">
-        {field.label}{field.required && <span className="text-rose-500"> *</span>}
+        {field.label}{field.required && <span className="text-blue-500"> *</span>}
       </label>
     );
     switch (field.type) {
@@ -335,7 +335,7 @@ export const AdminPage: React.FC = () => {
                 type="checkbox"
                 checked={Boolean(value)}
                 onChange={e => handleFieldChange(field, e.target.checked)}
-                className="w-4 h-4 accent-amber-600"
+                className="w-4 h-4 accent-blue-600"
               />
               <span>Yes</span>
             </label>
@@ -349,7 +349,7 @@ export const AdminPage: React.FC = () => {
               value={value ?? ''}
               onChange={e => handleFieldChange(field, e.target.value)}
               rows={3}
-              className="w-full mt-1 px-3 py-2 text-xs rounded-xl border border-stone-300 focus:ring-2 focus:ring-amber-500 outline-none"
+              className="w-full mt-1 px-3 py-2 text-xs rounded-xl border border-stone-300 focus:ring-2 focus:ring-blue-500 outline-none"
             />
           </div>
         );
@@ -361,7 +361,7 @@ export const AdminPage: React.FC = () => {
               value={Array.isArray(value) ? value.join('\n') : (value ?? '')}
               onChange={e => handleFieldChange(field, e.target.value)}
               rows={4}
-              className="w-full mt-1 px-3 py-2 text-xs rounded-xl border border-stone-300 focus:ring-2 focus:ring-amber-500 outline-none font-mono"
+              className="w-full mt-1 px-3 py-2 text-xs rounded-xl border border-stone-300 focus:ring-2 focus:ring-blue-500 outline-none font-mono"
             />
           </div>
         );
@@ -373,7 +373,7 @@ export const AdminPage: React.FC = () => {
               value={typeof value === 'string' ? value : JSON.stringify(value ?? [], null, 2)}
               onChange={e => handleFieldChange(field, e.target.value)}
               rows={6}
-              className="w-full mt-1 px-3 py-2 text-xs rounded-xl border border-stone-300 focus:ring-2 focus:ring-amber-500 outline-none font-mono"
+              className="w-full mt-1 px-3 py-2 text-xs rounded-xl border border-stone-300 focus:ring-2 focus:ring-blue-500 outline-none font-mono"
             />
           </div>
         );
@@ -385,7 +385,7 @@ export const AdminPage: React.FC = () => {
               type="number"
               value={value ?? ''}
               onChange={e => handleFieldChange(field, e.target.value)}
-              className="w-full mt-1 px-3 py-2 text-xs rounded-xl border border-stone-300 focus:ring-2 focus:ring-amber-500 outline-none"
+              className="w-full mt-1 px-3 py-2 text-xs rounded-xl border border-stone-300 focus:ring-2 focus:ring-blue-500 outline-none"
             />
           </div>
         );
@@ -397,7 +397,7 @@ export const AdminPage: React.FC = () => {
               type="text"
               value={value ?? ''}
               onChange={e => handleFieldChange(field, e.target.value)}
-              className="w-full mt-1 px-3 py-2 text-xs rounded-xl border border-stone-300 focus:ring-2 focus:ring-amber-500 outline-none"
+              className="w-full mt-1 px-3 py-2 text-xs rounded-xl border border-stone-300 focus:ring-2 focus:ring-blue-500 outline-none"
             />
           </div>
         );
@@ -414,16 +414,16 @@ export const AdminPage: React.FC = () => {
           <div className="relative z-10 space-y-1">
             <div className="flex items-center gap-2">
               <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse" />
-              <span className="text-[11px] font-bold text-amber-300 uppercase tracking-wider">Internal Operations CRM</span>
+              <span className="text-[11px] font-bold text-blue-300 uppercase tracking-wider">Internal Operations CRM</span>
             </div>
             <h1 className="text-2xl sm:text-3xl font-bold font-serif">
               Admin Dashboard
             </h1>
             <p className="text-xs text-slate-400">
-              Organise My Trip · Lead management & website content CRUD with REST API backend.
+              Vanshika Tour & Travel · Lead management & website content CRUD with REST API backend.
             </p>
             <div className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-[10px] font-bold ${
-              data.apiAvailable ? 'bg-emerald-500/15 text-emerald-300 border border-emerald-500/30' : 'bg-rose-500/15 text-rose-300 border border-rose-500/30'
+              data.apiAvailable ? 'bg-emerald-500/15 text-emerald-300 border border-emerald-500/30' : 'bg-blue-500/15 text-blue-300 border border-blue-500/30'
             }`}>
               {data.apiAvailable ? <Wifi className="w-3 h-3" /> : <WifiOff className="w-3 h-3" />}
               <span>{data.apiAvailable ? 'Backend API Connected' : 'Offline Mode (Local Fallback)'}</span>
@@ -435,7 +435,7 @@ export const AdminPage: React.FC = () => {
             <button
               onClick={() => setTab('leads')}
               className={`px-4 py-2 rounded-xl text-xs font-bold flex items-center gap-1.5 transition-colors ${
-                tab === 'leads' ? 'bg-amber-600 text-white shadow' : 'text-slate-200 hover:bg-white/10'
+                tab === 'leads' ? 'bg-blue-600 text-white shadow' : 'text-slate-200 hover:bg-white/10'
               }`}
             >
               <Users className="w-4 h-4" />
@@ -444,7 +444,7 @@ export const AdminPage: React.FC = () => {
             <button
               onClick={() => setTab('content')}
               className={`px-4 py-2 rounded-xl text-xs font-bold flex items-center gap-1.5 transition-colors ${
-                tab === 'content' ? 'bg-amber-600 text-white shadow' : 'text-slate-200 hover:bg-white/10'
+                tab === 'content' ? 'bg-blue-600 text-white shadow' : 'text-slate-200 hover:bg-white/10'
               }`}
             >
               <Database className="w-4 h-4" />
@@ -461,9 +461,9 @@ export const AdminPage: React.FC = () => {
                 <span className="text-xs text-slate-400 block font-medium">Total Inquiries</span>
                 <div className="text-2xl font-bold font-serif text-slate-900 mt-1">{stats.total}</div>
               </div>
-              <div className="bg-white p-4 rounded-2xl border border-amber-200 bg-amber-50/40 shadow-xs">
-                <span className="text-xs text-amber-800 block font-bold">New & Unread</span>
-                <div className="text-2xl font-bold font-serif text-amber-900 mt-1">{stats.new}</div>
+              <div className="bg-white p-4 rounded-2xl border border-blue-200 bg-blue-50/40 shadow-xs">
+                <span className="text-xs text-blue-800 block font-bold">New & Unread</span>
+                <div className="text-2xl font-bold font-serif text-blue-900 mt-1">{stats.new}</div>
               </div>
               <div className="bg-white p-4 rounded-2xl border border-blue-100 shadow-xs">
                 <span className="text-xs text-blue-700 block font-medium">Contacted</span>
@@ -488,7 +488,7 @@ export const AdminPage: React.FC = () => {
                   value={searchQuery}
                   onChange={e => setSearchQuery(e.target.value)}
                   placeholder="Search by guest name, phone, or email..."
-                  className="w-full pl-10 pr-3 py-2 text-xs rounded-xl border border-stone-300 focus:ring-2 focus:ring-amber-500 outline-none"
+                  className="w-full pl-10 pr-3 py-2 text-xs rounded-xl border border-stone-300 focus:ring-2 focus:ring-blue-500 outline-none"
                 />
               </div>
 
@@ -519,7 +519,7 @@ export const AdminPage: React.FC = () => {
 
                 <button
                   onClick={addSampleLead}
-                  className="px-3.5 py-2 rounded-xl bg-amber-600 hover:bg-amber-700 text-white text-xs font-bold flex items-center gap-1.5 transition-colors"
+                  className="px-3.5 py-2 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold flex items-center gap-1.5 transition-colors"
                 >
                   <Plus className="w-4 h-4" />
                   <span>Simulate Lead</span>
@@ -544,7 +544,7 @@ export const AdminPage: React.FC = () => {
                 </p>
                 <button
                   onClick={addSampleLead}
-                  className="px-4 py-2 bg-amber-600 text-white font-bold rounded-xl text-xs mt-2"
+                  className="px-4 py-2 bg-blue-600 text-white font-bold rounded-xl text-xs mt-2"
                 >
                   Generate Test Lead
                 </button>
@@ -552,20 +552,20 @@ export const AdminPage: React.FC = () => {
             ) : (
               <div className="space-y-3">
                 {filtered.map((enq) => {
-                  const waReplyMsg = `Hello ${enq.fullName}, greetings from Organise My Trip (Jaipur, Rajasthan)! Thank you for your inquiry regarding ${enq.packageInterest || `${enq.pickupCity || ''} taxi`}. Our trip coordinator has prepared your itinerary and quote.`;
+                  const waReplyMsg = `Hello ${enq.fullName}, greetings from Vanshika Tour & Travel (Jaipur, Rajasthan)! Thank you for your inquiry regarding ${enq.packageInterest || `${enq.pickupCity || ''} taxi`}. Our trip coordinator has prepared your itinerary and quote.`;
                   const waLink = `https://wa.me/${(enq.phone || '').replace(/[^0-9]/g, '')}?text=${encodeURIComponent(waReplyMsg)}`;
 
                   return (
                     <div
                       key={enq.id}
                       className={`bg-white rounded-2xl border p-5 transition-all shadow-xs space-y-3 ${
-                        enq.status === 'new' ? 'border-amber-400 ring-1 ring-amber-300' : 'border-stone-200'
+                        enq.status === 'new' ? 'border-blue-400 ring-1 ring-blue-300' : 'border-stone-200'
                       }`}
                     >
                       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 border-b border-stone-100 pb-3">
                         <div className="flex items-center gap-3">
                           <span className={`px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase ${
-                            enq.type === 'tour' ? 'bg-amber-100 text-amber-900' :
+                            enq.type === 'tour' ? 'bg-blue-100 text-blue-900' :
                             enq.type === 'taxi' ? 'bg-blue-100 text-blue-900' :
                             'bg-purple-100 text-purple-900'
                           }`}>
@@ -587,7 +587,7 @@ export const AdminPage: React.FC = () => {
                             value={enq.status}
                             onChange={e => updateEnquiryStatus(enq.id, e.target.value as any)}
                             className={`text-xs font-bold px-2.5 py-1 rounded-lg border outline-none cursor-pointer ${
-                              enq.status === 'new' ? 'bg-amber-100 text-amber-950 border-amber-300' :
+                              enq.status === 'new' ? 'bg-blue-100 text-blue-950 border-blue-300' :
                               enq.status === 'contacted' ? 'bg-blue-50 text-blue-900 border-blue-200' :
                               enq.status === 'quoted' ? 'bg-purple-50 text-purple-900 border-purple-200' :
                               enq.status === 'confirmed' ? 'bg-emerald-100 text-emerald-900 border-emerald-300' :
@@ -631,7 +631,7 @@ export const AdminPage: React.FC = () => {
 
                         <div className="space-y-1">
                           {enq.packageInterest && (
-                            <div>Package: <strong className="text-amber-800">{enq.packageInterest}</strong></div>
+                            <div>Package: <strong className="text-blue-800">{enq.packageInterest}</strong></div>
                           )}
                           {enq.pickupCity && (
                             <div>Route: <strong>{enq.pickupCity} → {enq.dropCity || 'Local'}</strong></div>
@@ -693,7 +693,7 @@ export const AdminPage: React.FC = () => {
               </div>
               <button
                 onClick={openCreate}
-                className="px-4 py-2 rounded-xl bg-amber-600 hover:bg-amber-700 text-white text-xs font-bold flex items-center gap-1.5 transition-colors shrink-0"
+                className="px-4 py-2 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold flex items-center gap-1.5 transition-colors shrink-0"
               >
                 <Plus className="w-4 h-4" />
                 <span>Add {activeCollection.singular}</span>
@@ -702,10 +702,10 @@ export const AdminPage: React.FC = () => {
 
             {/* Edit / Create Form */}
             {(editingItem !== null || isNew) && (
-              <div className="bg-white rounded-2xl border-2 border-amber-300 shadow-lg p-5 sm:p-6 space-y-4">
+              <div className="bg-white rounded-2xl border-2 border-blue-300 shadow-lg p-5 sm:p-6 space-y-4">
                 <div className="flex items-center justify-between border-b border-stone-100 pb-3">
                   <h3 className="font-bold text-base text-slate-900 flex items-center gap-2">
-                    {isNew ? <Plus className="w-4 h-4 text-amber-700" /> : <Pencil className="w-4 h-4 text-amber-700" />}
+                    {isNew ? <Plus className="w-4 h-4 text-blue-700" /> : <Pencil className="w-4 h-4 text-blue-700" />}
                     {isNew ? `New ${activeCollection.singular}` : `Edit ${activeCollection.singular}`}
                     {!isNew && <span className="text-[11px] font-mono text-slate-400">(id: {editingItem?.id})</span>}
                   </h3>
@@ -729,7 +729,7 @@ export const AdminPage: React.FC = () => {
                   </button>
                   <button
                     onClick={saveItem}
-                    className="px-4 py-2 rounded-xl bg-amber-600 hover:bg-amber-700 text-white text-xs font-bold flex items-center gap-1.5 transition-colors"
+                    className="px-4 py-2 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold flex items-center gap-1.5 transition-colors"
                   >
                     <Save className="w-3.5 h-3.5" />
                     <span>{isNew ? 'Create' : 'Save Changes'}</span>
@@ -742,7 +742,7 @@ export const AdminPage: React.FC = () => {
             <div className="bg-white rounded-2xl border border-stone-200 shadow-xs overflow-hidden">
               <div className="p-4 border-b border-stone-100 flex items-center justify-between">
                 <h3 className="text-sm font-bold text-slate-900 flex items-center gap-2">
-                  <LayoutDashboard className="w-4 h-4 text-amber-700" />
+                  <LayoutDashboard className="w-4 h-4 text-blue-700" />
                   <span>{activeCollection.label} ({collectionData?.length ?? 0})</span>
                 </h3>
                 <span className="text-[11px] text-slate-400">
@@ -785,14 +785,14 @@ export const AdminPage: React.FC = () => {
                           <div className="flex justify-end gap-1.5">
                             <button
                               onClick={() => openEdit(item)}
-                              className="p-2 rounded-lg bg-amber-50 hover:bg-amber-100 text-amber-800 border border-amber-200 transition-colors"
+                              className="p-2 rounded-lg bg-blue-50 hover:bg-blue-100 text-blue-800 border border-blue-200 transition-colors"
                               title="Edit"
                             >
                               <Pencil className="w-3.5 h-3.5" />
                             </button>
                             <button
                               onClick={() => deleteContentItem(item)}
-                              className="p-2 rounded-lg bg-rose-50 hover:bg-rose-100 text-rose-700 border border-rose-200 transition-colors"
+                              className="p-2 rounded-lg bg-blue-50 hover:bg-blue-100 text-blue-700 border border-blue-200 transition-colors"
                               title="Delete"
                             >
                               <Trash2 className="w-3.5 h-3.5" />

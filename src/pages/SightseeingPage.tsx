@@ -19,9 +19,9 @@ export const SightseeingPage: React.FC = () => {
       {/* Breadcrumb */}
       <div className="bg-white border-b border-stone-200 py-3 px-4">
         <div className="max-w-7xl mx-auto flex items-center gap-2 text-xs text-slate-500">
-          <button onClick={() => navigate('/')} className="hover:text-amber-800">Home</button>
+          <button onClick={() => navigate('/')} className="hover:text-blue-800">Home</button>
           <span>/</span>
-          <button onClick={() => navigate(`/tour-by-destination/${dest.slug}`)} className="hover:text-amber-800">{dest.name}</button>
+          <button onClick={() => navigate(`/tour-by-destination/${dest.slug}`)} className="hover:text-blue-800">{dest.name}</button>
           <span>/</span>
           <span className="text-slate-800 font-semibold truncate">{attraction.name}</span>
         </div>
@@ -30,7 +30,7 @@ export const SightseeingPage: React.FC = () => {
       {/* Main Content */}
       <div className="max-w-4xl mx-auto px-4 pt-10 space-y-8">
         <div className="space-y-3">
-          <div className="flex items-center gap-2 text-xs font-semibold text-amber-800 uppercase tracking-wider">
+          <div className="flex items-center gap-2 text-xs font-semibold text-blue-800 uppercase tracking-wider">
             <MapPin className="w-3.5 h-3.5" />
             <span>{dest.name}, Rajasthan</span>
           </div>
@@ -54,7 +54,7 @@ export const SightseeingPage: React.FC = () => {
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
           <div className="bg-white p-4 rounded-xl border border-stone-200 space-y-1">
             <span className="text-[10px] text-slate-400 font-bold uppercase flex items-center gap-1">
-              <Clock className="w-3 h-3 text-amber-700" />
+              <Clock className="w-3 h-3 text-blue-700" />
               <span>Timings</span>
             </span>
             <strong className="text-xs text-slate-800 block">{attraction.timing}</strong>
@@ -62,7 +62,7 @@ export const SightseeingPage: React.FC = () => {
 
           <div className="bg-white p-4 rounded-xl border border-stone-200 space-y-1">
             <span className="text-[10px] text-slate-400 font-bold uppercase flex items-center gap-1">
-              <Ticket className="w-3 h-3 text-amber-700" />
+              <Ticket className="w-3 h-3 text-blue-700" />
               <span>Entry Fee</span>
             </span>
             <strong className="text-xs text-slate-800 block">{attraction.entryFee}</strong>
@@ -70,7 +70,7 @@ export const SightseeingPage: React.FC = () => {
 
           <div className="bg-white p-4 rounded-xl border border-stone-200 space-y-1">
             <span className="text-[10px] text-slate-400 font-bold uppercase flex items-center gap-1">
-              <Clock className="w-3 h-3 text-amber-700" />
+              <Clock className="w-3 h-3 text-blue-700" />
               <span>Ideal Time Needed</span>
             </span>
             <strong className="text-xs text-slate-800 block">2 - 3 Hours</strong>
@@ -78,7 +78,7 @@ export const SightseeingPage: React.FC = () => {
 
           <div className="bg-white p-4 rounded-xl border border-stone-200 space-y-1">
             <span className="text-[10px] text-slate-400 font-bold uppercase flex items-center gap-1">
-              <Camera className="w-3 h-3 text-amber-700" />
+              <Camera className="w-3 h-3 text-blue-700" />
               <span>Photography</span>
             </span>
             <strong className="text-xs text-slate-800 block">Allowed (Camera fee extra)</strong>
@@ -97,7 +97,7 @@ export const SightseeingPage: React.FC = () => {
         </div>
 
         {/* Local Cab Booking CTA */}
-        <div className="bg-amber-50 p-6 sm:p-8 rounded-2xl border border-amber-200 space-y-4">
+        <div className="bg-blue-50 p-6 sm:p-8 rounded-2xl border border-blue-200 space-y-4">
           <div className="space-y-1">
             <h3 className="text-lg font-bold font-serif text-slate-900">
               Book Local Sightseeing Cab for {dest.name}

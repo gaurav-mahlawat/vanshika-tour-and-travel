@@ -10,11 +10,11 @@ export const B2bDmcPage: React.FC = () => {
     <div className="w-full bg-stone-50 py-10 sm:py-14">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
         {/* Header */}
-        <div className="bg-gradient-to-r from-slate-900 via-amber-950 to-slate-900 text-white p-8 sm:p-12 rounded-3xl relative overflow-hidden shadow-xl">
+        <div className="bg-gradient-to-r from-slate-900 via-blue-950 to-slate-900 text-white p-8 sm:p-12 rounded-3xl relative overflow-hidden shadow-xl">
           <div className="absolute inset-0 bg-cover bg-center opacity-25" style={{ backgroundImage: `url('images/packages/luxury-palace.webp')` }} />
-          <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-amber-950/75 to-slate-900/90" />
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-blue-950/75 to-slate-900/90" />
           <div className="relative z-10 max-w-3xl space-y-3">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 text-xs font-semibold">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-300 text-xs font-semibold">
               <Building2 className="w-3.5 h-3.5" />
               <span>Dedicated B2B Inbound DMC Desk</span>
             </div>
@@ -30,7 +30,7 @@ export const B2bDmcPage: React.FC = () => {
         {/* 4 Pillars of B2B Operations */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
           <div className="bg-white p-6 rounded-2xl border border-stone-200 shadow-xs space-y-2">
-            <div className="w-10 h-10 rounded-lg bg-amber-50 text-amber-800 flex items-center justify-center font-bold">
+            <div className="w-10 h-10 rounded-lg bg-blue-50 text-blue-800 flex items-center justify-center font-bold">
               <Car className="w-5 h-5" />
             </div>
             <h3 className="font-bold text-sm text-slate-900">Own Tourist Fleet</h3>
@@ -38,7 +38,7 @@ export const B2bDmcPage: React.FC = () => {
           </div>
 
           <div className="bg-white p-6 rounded-2xl border border-stone-200 shadow-xs space-y-2">
-            <div className="w-10 h-10 rounded-lg bg-amber-50 text-amber-800 flex items-center justify-center font-bold">
+            <div className="w-10 h-10 rounded-lg bg-blue-50 text-blue-800 flex items-center justify-center font-bold">
               <FileSpreadsheet className="w-5 h-5" />
             </div>
             <h3 className="font-bold text-sm text-slate-900">Confidential Net Tariffs</h3>
@@ -46,7 +46,7 @@ export const B2bDmcPage: React.FC = () => {
           </div>
 
           <div className="bg-white p-6 rounded-2xl border border-stone-200 shadow-xs space-y-2">
-            <div className="w-10 h-10 rounded-lg bg-amber-50 text-amber-800 flex items-center justify-center font-bold">
+            <div className="w-10 h-10 rounded-lg bg-blue-50 text-blue-800 flex items-center justify-center font-bold">
               <ShieldCheck className="w-5 h-5" />
             </div>
             <h3 className="font-bold text-sm text-slate-900">Strict White-Label Policy</h3>
@@ -54,7 +54,7 @@ export const B2bDmcPage: React.FC = () => {
           </div>
 
           <div className="bg-white p-6 rounded-2xl border border-stone-200 shadow-xs space-y-2">
-            <div className="w-10 h-10 rounded-lg bg-amber-50 text-amber-800 flex items-center justify-center font-bold">
+            <div className="w-10 h-10 rounded-lg bg-blue-50 text-blue-800 flex items-center justify-center font-bold">
               <Users className="w-5 h-5" />
             </div>
             <h3 className="font-bold text-sm text-slate-900">24/7 Operations Desk</h3>
@@ -65,7 +65,7 @@ export const B2bDmcPage: React.FC = () => {
         {/* B2B Partner Registration Form */}
         <div className="bg-white p-6 sm:p-10 rounded-3xl border border-stone-200 shadow-lg space-y-6">
           <div className="space-y-1">
-            <span className="text-xs font-bold uppercase tracking-wider text-amber-800 block">
+            <span className="text-xs font-bold uppercase tracking-wider text-blue-800 block">
               Agency Empanelment
             </span>
             <h2 className="text-2xl font-bold font-serif text-slate-900">

@@ -11,16 +11,16 @@ export const ActivityDetailPage: React.FC = () => {
 
   const act = ACTIVITIES.find(a => a.slug === slug) || ACTIVITIES[0];
 
-  const waMsg = `Hi Organise My Trip, I am interested in booking "${act.title}" in ${act.location}. Please share availability and booking details.`;
+  const waMsg = `Hi Vanshika Tour & Travel, I am interested in booking "${act.title}" in ${act.location}. Please share availability and booking details.`;
 
   return (
     <div className="w-full bg-stone-50 pb-20">
       {/* Breadcrumb */}
       <div className="bg-white border-b border-stone-200 py-3 px-4">
         <div className="max-w-7xl mx-auto flex items-center gap-2 text-xs text-slate-500">
-          <button onClick={() => navigate('/')} className="hover:text-amber-800">Home</button>
+          <button onClick={() => navigate('/')} className="hover:text-blue-800">Home</button>
           <span>/</span>
-          <button onClick={() => navigate('/activities')} className="hover:text-amber-800">Experiences</button>
+          <button onClick={() => navigate('/activities')} className="hover:text-blue-800">Experiences</button>
           <span>/</span>
           <span className="text-slate-800 font-semibold truncate">{act.title}</span>
         </div>
@@ -36,10 +36,10 @@ export const ActivityDetailPage: React.FC = () => {
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
           <div className="flex flex-wrap items-center gap-2">
-            <span className="px-3 py-1 rounded-full bg-amber-500 text-slate-950 text-xs font-bold">
+            <span className="px-3 py-1 rounded-full bg-blue-500 text-slate-950 text-xs font-bold">
               {act.category}
             </span>
-            <span className="px-3 py-1 rounded-full bg-white/10 text-amber-300 text-xs font-semibold backdrop-blur-xs border border-white/10">
+            <span className="px-3 py-1 rounded-full bg-white/10 text-blue-300 text-xs font-semibold backdrop-blur-xs border border-white/10">
               Duration: {act.duration}
             </span>
           </div>
@@ -50,15 +50,15 @@ export const ActivityDetailPage: React.FC = () => {
 
           <div className="flex flex-wrap items-center gap-y-2 gap-x-6 text-xs text-slate-300">
             <div className="flex items-center gap-1.5">
-              <MapPin className="w-4 h-4 text-amber-400 shrink-0" />
+              <MapPin className="w-4 h-4 text-blue-400 shrink-0" />
               <span>{act.location}</span>
             </div>
             <div className="flex items-center gap-1.5">
-              <Clock className="w-4 h-4 text-amber-400 shrink-0" />
+              <Clock className="w-4 h-4 text-blue-400 shrink-0" />
               <span>Timings: {act.timing}</span>
             </div>
             <div className="flex items-center gap-1.5">
-              <Users className="w-4 h-4 text-amber-400 shrink-0" />
+              <Users className="w-4 h-4 text-blue-400 shrink-0" />
               <span>Ideal for: {act.idealFor}</span>
             </div>
           </div>
@@ -84,7 +84,7 @@ export const ActivityDetailPage: React.FC = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
                   {act.highlights.map((hl, i) => (
                     <div key={i} className="flex items-start gap-2 text-xs text-slate-700 bg-stone-50 p-2.5 rounded-xl border border-stone-100">
-                      <Check className="w-4 h-4 text-amber-700 shrink-0 mt-0.5" />
+                      <Check className="w-4 h-4 text-blue-700 shrink-0 mt-0.5" />
                       <span>{hl}</span>
                     </div>
                   ))}

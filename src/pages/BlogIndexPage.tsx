@@ -31,11 +31,11 @@ export const BlogIndexPage: React.FC = () => {
     <div className="w-full bg-stone-50 py-10 sm:py-14">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
         {/* Header */}
-        <div className="bg-gradient-to-r from-slate-900 via-amber-950 to-slate-900 text-white p-8 sm:p-12 rounded-3xl relative overflow-hidden shadow-xl">
+        <div className="bg-gradient-to-r from-slate-900 via-blue-950 to-slate-900 text-white p-8 sm:p-12 rounded-3xl relative overflow-hidden shadow-xl">
           <div className="absolute inset-0 bg-cover bg-center opacity-25" style={{ backgroundImage: `url('images/blog/rajasthan-tourism.webp')` }} />
-          <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-amber-950/75 to-slate-900/90" />
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-blue-950/75 to-slate-900/90" />
           <div className="relative z-10 max-w-3xl space-y-3">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 text-xs font-semibold">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-300 text-xs font-semibold">
               <Sparkles className="w-3.5 h-3.5" />
               <span>14 Insider Travel Guides & Blueprints</span>
             </div>
@@ -56,7 +56,7 @@ export const BlogIndexPage: React.FC = () => {
                 key={cat}
                 onClick={() => setSelectedTag(cat)}
                 className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-colors ${
-                  selectedTag === cat ? 'bg-amber-700 text-white' : 'bg-stone-100 text-slate-600 hover:bg-stone-200'
+                  selectedTag === cat ? 'bg-blue-700 text-white' : 'bg-stone-100 text-slate-600 hover:bg-stone-200'
                 }`}
               >
                 {cat}
@@ -71,7 +71,7 @@ export const BlogIndexPage: React.FC = () => {
               value={search}
               onChange={e => setSearch(e.target.value)}
               placeholder="Search guides & advice..."
-              className="w-full pl-9 pr-3 py-1.5 text-xs rounded-lg border border-stone-300 focus:ring-2 focus:ring-amber-500 outline-none"
+              className="w-full pl-9 pr-3 py-1.5 text-xs rounded-lg border border-stone-300 focus:ring-2 focus:ring-blue-500 outline-none"
             />
           </div>
         </div>
@@ -92,7 +92,7 @@ export const BlogIndexPage: React.FC = () => {
                   referrerPolicy="no-referrer"
                   loading="lazy"
                 />
-                <span className="absolute top-3 left-3 text-[10px] font-bold px-2 py-0.5 rounded-full bg-slate-900/80 text-amber-300">
+                <span className="absolute top-3 left-3 text-[10px] font-bold px-2 py-0.5 rounded-full bg-slate-900/80 text-blue-300">
                   {post.category}
                 </span>
               </div>
@@ -104,7 +104,7 @@ export const BlogIndexPage: React.FC = () => {
                   <span>{post.readTime}</span>
                 </div>
 
-                <h3 className="font-serif font-bold text-base text-slate-900 group-hover:text-amber-800 transition-colors line-clamp-2">
+                <h3 className="font-serif font-bold text-base text-slate-900 group-hover:text-blue-800 transition-colors line-clamp-2">
                   {post.title}
                 </h3>
 
@@ -114,7 +114,7 @@ export const BlogIndexPage: React.FC = () => {
 
                 <div className="pt-2 flex items-center justify-between text-xs">
                   <span className="text-[11px] text-slate-400">By {post.author.split(' ')[0]}</span>
-                  <span className="font-bold text-amber-800 flex items-center gap-1 group-hover:translate-x-0.5 transition-transform">
+                  <span className="font-bold text-blue-800 flex items-center gap-1 group-hover:translate-x-0.5 transition-transform">
                     Read Article →
                   </span>
                 </div>

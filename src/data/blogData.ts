@@ -8,7 +8,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Travel Tips',
     readTime: '6 min read',
     publishedDate: 'October 12, 2025',
-    author: 'Gaurav Rathore (Lead Destination Planner)',
+    author: 'Vanshika Tour & Travel Editorial Team',
     image: 'images/blog/best-time-rajasthan.webp',
     excerpt: 'Planning your dream royal holiday? From crisp winter mornings at Amer Fort to monsoon lake views in Udaipur, here is when to visit each corner of Rajasthan.',
     content: [
@@ -27,7 +27,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Itineraries',
     readTime: '8 min read',
     publishedDate: 'November 4, 2025',
-    author: 'Vikram Singh Shekhawat',
+    author: 'Vanshika Tour & Travel Editorial Team',
     image: 'images/packages/classic-rajasthan.webp',
     excerpt: 'How to experience Jaipur, Jodhpur, and Udaipur in one seamless 7-day week without feeling rushed. Route maps, drive times, and insider tips.',
     content: [
@@ -47,7 +47,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Food Guide',
     readTime: '5 min read',
     publishedDate: 'December 18, 2025',
-    author: 'Chef Sanyukta Kumari',
+    author: 'Vanshika Tour & Travel Editorial Team',
     image: 'images/packages/custom-tour.webp',
     excerpt: 'Discover the culinary secrets of royal kitchens and desert nomads, from smoky Laal Maas and Ker Sangri to mouthwatering Ghevar and Makhaniya Lassi.',
     content: [
@@ -68,7 +68,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Culture & Festivals',
     readTime: '7 min read',
     publishedDate: 'January 15, 2026',
-    author: 'Ravi Chouhan',
+    author: 'Vanshika Tour & Travel Editorial Team',
     image: 'images/blog/camel-safari.webp',
     excerpt: 'Everything you need to know about experiencing the world’s most spectacular desert gathering: dates, photography etiquette, and booking tents.',
     content: [
@@ -87,7 +87,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Heritage',
     readTime: '7 min read',
     publishedDate: 'January 28, 2026',
-    author: 'Dr. Mahendra Bhati',
+    author: 'Vanshika Tour & Travel Editorial Team',
     image: 'images/blog/mehrangarh-jodhpur.webp',
     excerpt: 'Explore the architectural genius and wartime valor behind the 6 UNESCO hill forts: Amer, Chittorgarh, Kumbhalgarh, Jaisalmer, Ranthambore, and Gagron.',
     content: [
@@ -108,7 +108,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Travel Tips',
     readTime: '4 min read',
     publishedDate: 'February 10, 2026',
-    author: 'Organise My Trip Fleet Team',
+    author: 'Vanshika Tour & Travel Fleet Team',
     image: 'images/taxi/sedan.png',
     excerpt: 'How the Delhi-Mumbai Expressway has cut travel time between Delhi and Jaipur to just 3.5 hours. Toll costs, rest stops, speed limits, and cab advice.',
     content: [
@@ -127,7 +127,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Travel Tips',
     readTime: '6 min read',
     publishedDate: 'February 22, 2026',
-    author: 'Priya Naruka',
+    author: 'Vanshika Tour & Travel Editorial Team',
     image: 'images/blog/best-places-jaipur.webp',
     excerpt: 'Your insider guide to blue pottery, precious gemstones, handmade quilts (Jaipuri Razai), and block-printed cottons in the Pink City.',
     content: [
@@ -146,7 +146,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Travel Tips',
     readTime: '6 min read',
     publishedDate: 'March 2, 2026',
-    author: 'Gaurav Rathore',
+    author: 'Vanshika Tour & Travel Editorial Team',
     image: 'images/packages/ranthambore-national-park-safari.webp',
     excerpt: 'Zones 1 to 5 vs 6 to 10 explained. Jeep vs Canter, booking timelines, and increasing your odds of spotting a wild Bengal tiger.',
     content: [
@@ -165,7 +165,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Heritage',
     readTime: '5 min read',
     publishedDate: 'March 14, 2026',
-    author: 'Vikram Singh Shekhawat',
+    author: 'Vanshika Tour & Travel Editorial Team',
     image: 'images/packages/rampuria-haveli-bikaner.webp',
     excerpt: 'Discover why this semi-desert region in northern Rajasthan is celebrated as the world’s largest open-air fresco art gallery.',
     content: [
@@ -183,7 +183,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Travel Tips',
     readTime: '5 min read',
     publishedDate: 'April 5, 2026',
-    author: 'Priya Naruka',
+    author: 'Vanshika Tour & Travel Editorial Team',
     image: 'images/blog/udaipur.webp',
     excerpt: 'From private solar boat rides on Lake Pichola to candlelit rooftop dinners overlooking City Palace, here is how to craft an unforgettable romantic trip.',
     content: [
@@ -203,7 +203,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Culture & Festivals',
     readTime: '6 min read',
     publishedDate: 'April 20, 2026',
-    author: 'Dr. Mahendra Bhati',
+    author: 'Vanshika Tour & Travel Editorial Team',
     image: 'images/blog/festivals-rajasthan.webp',
     excerpt: 'How to dress respectfully at temples, photograph locals politely, and embrace the legendary "Padharo Mhare Desh" Rajasthani hospitality.',
     content: [
@@ -222,7 +222,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Travel Tips',
     readTime: '5 min read',
     publishedDate: 'May 8, 2026',
-    author: 'Ravi Chouhan',
+    author: 'Vanshika Tour & Travel Editorial Team',
     image: 'images/packages/desert-tour-rajasthan.webp',
     excerpt: 'What an evening in a Swiss desert camp really looks like: amenities, weather, folk performances, and stargazing tips.',
     content: [
@@ -241,7 +241,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Heritage',
     readTime: '5 min read',
     publishedDate: 'May 25, 2026',
-    author: 'Gaurav Rathore',
+    author: 'Vanshika Tour & Travel Editorial Team',
     image: 'images/destinations/bikaner-citytour.webp',
     excerpt: 'Why Bikaner deserves 2 days on your itinerary: the rat temple of Deshnok, GI-tagged crispy bhujia, and royal red sandstone palaces.',
     content: [
@@ -260,7 +260,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Travel Tips',
     readTime: '7 min read',
     publishedDate: 'June 10, 2026',
-    author: 'Organise My Trip Advisory Desk',
+    author: 'Vanshika Tour & Travel Advisory Desk',
     image: 'images/packages/luxury-palace.webp',
     excerpt: 'Transparent per-day expense breakdown for hotels, private taxi hire, meals, and monument tickets across Budget, Deluxe, and Royal Luxury tiers.',
     content: [

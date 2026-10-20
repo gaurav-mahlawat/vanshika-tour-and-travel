@@ -32,16 +32,16 @@ export const PackageDetailPage: React.FC = () => {
     .filter(p => p.id !== pkg.id && (p.category === pkg.category || p.durationDays === pkg.durationDays))
     .slice(0, 3);
 
-  const waMessage = `Hi Organise My Trip, I am interested in "${pkg.title}" (${pkg.durationDays} Days / ${pkg.durationNights} Nights). Please send full day-by-day itinerary and price quote.`;
+  const waMessage = `Hi Vanshika Tour & Travel, I am interested in "${pkg.title}" (${pkg.durationDays} Days / ${pkg.durationNights} Nights). Please send full day-by-day itinerary and price quote.`;
 
   return (
     <div className="w-full bg-stone-50 pb-20">
       {/* 1. Breadcrumbs */}
       <div className="bg-white border-b border-stone-200 py-3 px-4">
         <div className="max-w-7xl mx-auto flex items-center gap-2 text-xs text-slate-500">
-          <button onClick={() => navigate('/')} className="hover:text-amber-800">Home</button>
+          <button onClick={() => navigate('/')} className="hover:text-blue-800">Home</button>
           <span>/</span>
-          <button onClick={() => navigate('/packages')} className="hover:text-amber-800">Packages</button>
+          <button onClick={() => navigate('/packages')} className="hover:text-blue-800">Packages</button>
           <span>/</span>
           <span className="text-slate-800 font-semibold truncate">{pkg.title}</span>
         </div>
@@ -57,10 +57,10 @@ export const PackageDetailPage: React.FC = () => {
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
           <div className="flex flex-wrap items-center gap-2">
-            <span className="px-3 py-1 rounded-full bg-amber-500 text-slate-950 text-xs font-bold">
+            <span className="px-3 py-1 rounded-full bg-blue-500 text-slate-950 text-xs font-bold">
               {pkg.durationDays} Days / {pkg.durationNights} Nights
             </span>
-            <span className="px-3 py-1 rounded-full bg-white/10 text-amber-300 text-xs font-semibold backdrop-blur-xs border border-white/10">
+            <span className="px-3 py-1 rounded-full bg-white/10 text-blue-300 text-xs font-semibold backdrop-blur-xs border border-white/10">
               {pkg.category}
             </span>
             <span className="px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 text-xs font-semibold border border-emerald-500/30">
@@ -72,21 +72,21 @@ export const PackageDetailPage: React.FC = () => {
             {pkg.title}
           </h1>
 
-          <p className="text-sm sm:text-base text-amber-300 font-medium max-w-3xl">
+          <p className="text-sm sm:text-base text-blue-300 font-medium max-w-3xl">
             {pkg.tagline}
           </p>
 
           <div className="flex flex-wrap items-center gap-y-2 gap-x-6 text-xs text-slate-300">
             <div className="flex items-center gap-1.5">
-              <MapPin className="w-4 h-4 text-amber-400 shrink-0" />
+              <MapPin className="w-4 h-4 text-blue-400 shrink-0" />
               <span><strong>Route:</strong> {pkg.route}</span>
             </div>
             <div className="flex items-center gap-1.5">
-              <Car className="w-4 h-4 text-amber-400 shrink-0" />
+              <Car className="w-4 h-4 text-blue-400 shrink-0" />
               <span>Dedicated AC Vehicle & Chauffeur</span>
             </div>
             <div className="flex items-center gap-1.5">
-              <ShieldCheck className="w-4 h-4 text-amber-400 shrink-0" />
+              <ShieldCheck className="w-4 h-4 text-blue-400 shrink-0" />
               <span>Jaipur & Udaipur Local Operator</span>
             </div>
           </div>
@@ -115,7 +115,7 @@ export const PackageDetailPage: React.FC = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                   {pkg.highlights.map((hl, i) => (
                     <div key={i} className="flex items-start gap-2 text-xs text-slate-700 bg-stone-50 p-2.5 rounded-xl border border-stone-100">
-                      <Check className="w-4 h-4 text-amber-700 shrink-0 mt-0.5" />
+                      <Check className="w-4 h-4 text-blue-700 shrink-0 mt-0.5" />
                       <span>{hl}</span>
                     </div>
                   ))}
@@ -134,7 +134,7 @@ export const PackageDetailPage: React.FC = () => {
                 </div>
                 <button
                   onClick={() => setActiveDay(activeDay === null ? 1 : null)}
-                  className="text-xs font-semibold text-amber-800 hover:underline"
+                  className="text-xs font-semibold text-blue-800 hover:underline"
                 >
                   {activeDay === null ? 'Expand All' : 'Collapse All'}
                 </button>
@@ -151,16 +151,16 @@ export const PackageDetailPage: React.FC = () => {
                       <button
                         onClick={() => setActiveDay(isOpen ? -1 : day.day)}
                         className={`w-full text-left p-4 sm:p-5 flex items-center justify-between gap-4 font-semibold text-sm transition-colors ${
-                          isOpen ? 'bg-amber-50/70 text-amber-950' : 'bg-white text-slate-800 hover:bg-stone-50'
+                          isOpen ? 'bg-blue-50/70 text-blue-950' : 'bg-white text-slate-800 hover:bg-stone-50'
                         }`}
                       >
                         <div className="flex items-center gap-3">
-                          <span className="w-8 h-8 rounded-lg bg-amber-700 text-white font-bold text-xs flex items-center justify-center shrink-0">
+                          <span className="w-8 h-8 rounded-lg bg-blue-700 text-white font-bold text-xs flex items-center justify-center shrink-0">
                             D{day.day}
                           </span>
                           <span className="font-serif text-sm sm:text-base">{day.title}</span>
                         </div>
-                        <ChevronDown className={`w-4 h-4 text-amber-800 transition-transform ${isOpen ? 'rotate-180' : ''}`} />
+                        <ChevronDown className={`w-4 h-4 text-blue-800 transition-transform ${isOpen ? 'rotate-180' : ''}`} />
                       </button>
 
                       {isOpen && (
@@ -198,14 +198,14 @@ export const PackageDetailPage: React.FC = () => {
 
               {/* Exclusions */}
               <div className="bg-white p-6 rounded-2xl border border-stone-200 shadow-xs space-y-3">
-                <h3 className="font-serif font-bold text-base text-rose-800 flex items-center gap-2">
-                  <X className="w-5 h-5 text-rose-600" />
+                <h3 className="font-serif font-bold text-base text-blue-800 flex items-center gap-2">
+                  <X className="w-5 h-5 text-blue-600" />
                   <span>Package Exclusions</span>
                 </h3>
                 <ul className="space-y-2 text-xs text-slate-700">
                   {pkg.exclusions.map((exc, i) => (
                     <li key={i} className="flex items-start gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-rose-500 shrink-0 mt-1.5" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-blue-500 shrink-0 mt-1.5" />
                       <span>{exc}</span>
                     </li>
                   ))}
@@ -216,7 +216,7 @@ export const PackageDetailPage: React.FC = () => {
             {/* Hotel Options Section */}
             <div className="bg-white p-6 sm:p-8 rounded-2xl border border-stone-200 shadow-xs space-y-4">
               <h2 className="text-xl font-bold font-serif text-slate-900 flex items-center gap-2">
-                <Building className="w-5 h-5 text-amber-700" />
+                <Building className="w-5 h-5 text-blue-700" />
                 <span>Accommodation Categories</span>
               </h2>
               <p className="text-xs text-slate-600">
@@ -227,7 +227,7 @@ export const PackageDetailPage: React.FC = () => {
                 <div 
                   onClick={() => setSelectedHotelTier('budget')}
                   className={`p-4 rounded-xl border cursor-pointer transition-all ${
-                    selectedHotelTier === 'budget' ? 'border-amber-600 bg-amber-50/50 shadow-xs' : 'border-stone-200 hover:bg-stone-50'
+                    selectedHotelTier === 'budget' ? 'border-blue-600 bg-blue-50/50 shadow-xs' : 'border-stone-200 hover:bg-stone-50'
                   }`}
                 >
                   <span className="text-[10px] uppercase font-bold text-slate-500 block">Comfort Tier</span>
@@ -238,10 +238,10 @@ export const PackageDetailPage: React.FC = () => {
                 <div 
                   onClick={() => setSelectedHotelTier('deluxe')}
                   className={`p-4 rounded-xl border cursor-pointer transition-all ${
-                    selectedHotelTier === 'deluxe' ? 'border-amber-600 bg-amber-50/50 shadow-xs ring-1 ring-amber-500' : 'border-stone-200 hover:bg-stone-50'
+                    selectedHotelTier === 'deluxe' ? 'border-blue-600 bg-blue-50/50 shadow-xs ring-1 ring-blue-500' : 'border-stone-200 hover:bg-stone-50'
                   }`}
                 >
-                  <span className="text-[10px] uppercase font-bold text-amber-800 block">Most Popular (4★)</span>
+                  <span className="text-[10px] uppercase font-bold text-blue-800 block">Most Popular (4★)</span>
                   <h4 className="font-serif font-bold text-sm text-slate-900 mt-0.5">Deluxe Heritage Haveli Stays</h4>
                   <p className="text-xs text-slate-600 mt-1">{pkg.hotels.deluxe}</p>
                 </div>
@@ -249,10 +249,10 @@ export const PackageDetailPage: React.FC = () => {
                 <div 
                   onClick={() => setSelectedHotelTier('luxury')}
                   className={`p-4 rounded-xl border cursor-pointer transition-all ${
-                    selectedHotelTier === 'luxury' ? 'border-amber-600 bg-amber-50/50 shadow-xs' : 'border-stone-200 hover:bg-stone-50'
+                    selectedHotelTier === 'luxury' ? 'border-blue-600 bg-blue-50/50 shadow-xs' : 'border-stone-200 hover:bg-stone-50'
                   }`}
                 >
-                  <span className="text-[10px] uppercase font-bold text-amber-700 block">Royal Palace Tier</span>
+                  <span className="text-[10px] uppercase font-bold text-blue-700 block">Royal Palace Tier</span>
                   <h4 className="font-serif font-bold text-sm text-slate-900 mt-0.5">5-Star Royal Palaces</h4>
                   <p className="text-xs text-slate-600 mt-1">{pkg.hotels.luxury}</p>
                 </div>
@@ -268,9 +268,9 @@ export const PackageDetailPage: React.FC = () => {
                   Direct Local Operator
                 </span>
                 <div className="flex items-baseline gap-2 mt-0.5">
-                  <span className="text-2xl font-bold font-serif text-amber-700">Price on Request</span>
+                  <span className="text-2xl font-bold font-serif text-blue-700">Price on Request</span>
                 </div>
-                <p className="text-[11px] text-amber-700 font-medium mt-1 flex items-center gap-1">
+                <p className="text-[11px] text-blue-700 font-medium mt-1 flex items-center gap-1">
                   <ShieldCheck className="w-3.5 h-3.5" />
                   <span>Date-Dependent Quotation · Customisable by Hotel & Meal Plan</span>
                 </p>
@@ -303,13 +303,13 @@ export const PackageDetailPage: React.FC = () => {
             </div>
 
             {/* Local Trust Banner */}
-            <div className="bg-amber-50 p-5 rounded-2xl border border-amber-200/60 space-y-2 text-xs">
-              <h4 className="font-bold text-amber-900 flex items-center gap-1.5">
-                <ShieldCheck className="w-4 h-4 text-amber-700" />
+            <div className="bg-blue-50 p-5 rounded-2xl border border-blue-200/60 space-y-2 text-xs">
+              <h4 className="font-bold text-blue-900 flex items-center gap-1.5">
+                <ShieldCheck className="w-4 h-4 text-blue-700" />
                 <span>Local Support in Rajasthan</span>
               </h4>
-              <p className="text-amber-800 leading-relaxed text-[11px]">
-                Organise My Trip is a local Rajasthan operator based in Jaipur. Add 3*/4*/5* hotels, breakfast or MAP, private vehicle, guides, safari permits, desert camp, cultural evenings and airport/rail transfers as required.
+              <p className="text-blue-800 leading-relaxed text-[11px]">
+                Vanshika Tour & Travel is a local Rajasthan operator based in Jaipur. Add 3*/4*/5* hotels, breakfast or MAP, private vehicle, guides, safari permits, desert camp, cultural evenings and airport/rail transfers as required.
               </p>
             </div>
           </div>
@@ -335,18 +335,18 @@ export const PackageDetailPage: React.FC = () => {
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform"
                       referrerPolicy="no-referrer"
                     />
-                    <span className="absolute top-2.5 right-2.5 text-[10px] font-bold px-2 py-0.5 rounded-full bg-amber-600 text-white">
+                    <span className="absolute top-2.5 right-2.5 text-[10px] font-bold px-2 py-0.5 rounded-full bg-blue-600 text-white">
                       {rp.durationDays}D / {rp.durationNights}N
                     </span>
                   </div>
                   <div className="p-4 space-y-1">
-                    <h3 className="font-serif font-bold text-sm text-slate-900 group-hover:text-amber-800 transition-colors line-clamp-1">
+                    <h3 className="font-serif font-bold text-sm text-slate-900 group-hover:text-blue-800 transition-colors line-clamp-1">
                       {rp.title}
                     </h3>
                     <p className="text-xs text-slate-500 line-clamp-1">{rp.route}</p>
                     <div className="pt-2 flex justify-between items-center text-xs">
-                      <strong className="text-amber-700">Price on Request</strong>
-                      <span className="text-amber-800 font-bold text-[11px]">View Tour →</span>
+                      <strong className="text-blue-700">Price on Request</strong>
+                      <span className="text-blue-800 font-bold text-[11px]">View Tour →</span>
                     </div>
                   </div>
                 </div>

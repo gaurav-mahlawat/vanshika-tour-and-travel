@@ -11,7 +11,7 @@ interface LayoutProps {
 
 export const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
-    <div className="min-h-screen flex flex-col bg-stone-50 font-sans text-slate-800 antialiased selection:bg-amber-200 selection:text-amber-900">
+    <div className="min-h-screen flex flex-col bg-stone-50 font-sans text-slate-800 antialiased selection:bg-blue-200 selection:text-blue-900">
       <Header />
       <main className="grow">
         {children}

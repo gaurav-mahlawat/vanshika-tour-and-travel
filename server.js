@@ -112,14 +112,14 @@ app.get('/api/health', (req, res) => {
 
 if (fs.existsSync(DIST_PATH)) {
   // Serve built site under both the configured base path and root.
-  app.use('/organise-my-trip', express.static(DIST_PATH));
+  app.use('/vanshika-tour-and-travel', express.static(DIST_PATH));
   app.use(express.static(DIST_PATH));
 
   // Relative asset paths (images/..., assets/...) resolved from nested SPA
   // routes like /packages/images/x or /attraction/jaipur/images/x —
   // rewrite to dist/<asset>.
   app.use((req, res, next) => {
-    const m = req.path.match(/^\/(?:organise-my-trip\/)?[\w-]+(?:\/[\w-]+)*\/((?:images|assets)\/.+)$/);
+    const m = req.path.match(/^\/(?:vanshika-tour-and-travel\/)?[\w-]+(?:\/[\w-]+)*\/((?:images|assets)\/.+)$/);
     if (m) {
       return res.sendFile(path.join(DIST_PATH, m[1]), err => { if (err) next(); });
     }

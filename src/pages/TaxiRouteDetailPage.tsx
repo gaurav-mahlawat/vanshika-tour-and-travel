@@ -11,16 +11,16 @@ export const TaxiRouteDetailPage: React.FC = () => {
 
   const route = TAXI_ROUTES.find(r => r.slug === routeSlug) || TAXI_ROUTES[0];
 
-  const waMsg = `Hi Organise My Trip, I want to book a taxi from ${route.fromCity} to ${route.toCity}. Please share the best quote.`;
+  const waMsg = `Hi Vanshika Tour & Travel, I want to book a taxi from ${route.fromCity} to ${route.toCity}. Please share the best quote.`;
 
   return (
     <div className="w-full bg-stone-50 pb-20">
       {/* Breadcrumb */}
       <div className="bg-white border-b border-stone-200 py-3 px-4">
         <div className="max-w-7xl mx-auto flex items-center gap-2 text-xs text-slate-500">
-          <button onClick={() => navigate('/')} className="hover:text-amber-800">Home</button>
+          <button onClick={() => navigate('/')} className="hover:text-blue-800">Home</button>
           <span>/</span>
-          <button onClick={() => navigate('/taxi-service')} className="hover:text-amber-800">Taxi Service</button>
+          <button onClick={() => navigate('/taxi-service')} className="hover:text-blue-800">Taxi Service</button>
           <span>/</span>
           <span className="text-slate-800 font-semibold truncate">{route.fromCity} to {route.toCity} Taxi</span>
         </div>
@@ -31,7 +31,7 @@ export const TaxiRouteDetailPage: React.FC = () => {
         <div className="absolute inset-0 bg-cover bg-center opacity-20" style={{ backgroundImage: `url('images/taxi/etios.webp')` }} />
         <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/80 to-slate-950/60" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 text-xs font-semibold border border-amber-500/30">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-300 text-xs font-semibold border border-blue-500/30">
             <Car className="w-3.5 h-3.5" />
             <span>Private Chauffeur Driven Cab Service</span>
           </div>
@@ -42,15 +42,15 @@ export const TaxiRouteDetailPage: React.FC = () => {
 
           <div className="flex flex-wrap items-center gap-y-2 gap-x-6 text-xs text-slate-300">
             <div className="flex items-center gap-1.5">
-              <MapPin className="w-4 h-4 text-amber-400 shrink-0" />
+              <MapPin className="w-4 h-4 text-blue-400 shrink-0" />
               <span>Distance: <strong>{route.distanceKm} km</strong></span>
             </div>
             <div className="flex items-center gap-1.5">
-              <Clock className="w-4 h-4 text-amber-400 shrink-0" />
+              <Clock className="w-4 h-4 text-blue-400 shrink-0" />
               <span>Travel Time: <strong>{route.durationHours}</strong></span>
             </div>
             <div className="flex items-center gap-1.5">
-              <ShieldCheck className="w-4 h-4 text-amber-400 shrink-0" />
+              <ShieldCheck className="w-4 h-4 text-blue-400 shrink-0" />
               <span>Via: {route.highway}</span>
             </div>
           </div>
@@ -79,8 +79,8 @@ export const TaxiRouteDetailPage: React.FC = () => {
                   </h3>
                   <div className="flex flex-wrap gap-2">
                     {route.popularStops.map((stop, i) => (
-                      <span key={i} className="px-3 py-1.5 rounded-lg bg-amber-50 border border-amber-200 text-amber-900 text-xs font-medium flex items-center gap-1.5">
-                        <MapPin className="w-3.5 h-3.5 text-amber-700 shrink-0" />
+                      <span key={i} className="px-3 py-1.5 rounded-lg bg-blue-50 border border-blue-200 text-blue-900 text-xs font-medium flex items-center gap-1.5">
+                        <MapPin className="w-3.5 h-3.5 text-blue-700 shrink-0" />
                         <span>{stop}</span>
                       </span>
                     ))}
@@ -107,9 +107,9 @@ export const TaxiRouteDetailPage: React.FC = () => {
                   <p className="text-[11px] text-slate-500">Quotation on request</p>
                 </div>
 
-                <div className="p-4 rounded-xl border border-amber-300 bg-amber-50/50 space-y-1">
-                  <span className="text-[10px] text-amber-800 uppercase font-bold">Executive Innova Crysta</span>
-                  <div className="text-lg font-bold font-serif text-amber-950">Captain Seats · Ultra Smooth Ride</div>
+                <div className="p-4 rounded-xl border border-blue-300 bg-blue-50/50 space-y-1">
+                  <span className="text-[10px] text-blue-800 uppercase font-bold">Executive Innova Crysta</span>
+                  <div className="text-lg font-bold font-serif text-blue-950">Captain Seats · Ultra Smooth Ride</div>
                   <p className="text-[11px] text-slate-500">Quotation on request</p>
                 </div>
 
@@ -133,7 +133,7 @@ export const TaxiRouteDetailPage: React.FC = () => {
           <div className="lg:col-span-5 sticky top-24 space-y-5">
             <div className="bg-white p-6 sm:p-8 rounded-3xl border border-stone-200 shadow-xl space-y-4">
               <div>
-                <span className="text-[10px] uppercase font-bold text-amber-800 tracking-wider block">
+                <span className="text-[10px] uppercase font-bold text-blue-800 tracking-wider block">
                   Book This Route
                 </span>
                 <h3 className="text-xl font-bold font-serif text-slate-900">

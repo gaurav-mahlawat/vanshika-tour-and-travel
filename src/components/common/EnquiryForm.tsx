@@ -100,7 +100,7 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({
   };
 
   if (submittedEnquiry) {
-    const waText = `Hi Organise My Trip, I submitted enquiry #${submittedEnquiry.id} for ${
+    const waText = `Hi Vanshika Tour & Travel, I submitted enquiry #${submittedEnquiry.id} for ${
       formType === 'taxi'
         ? `taxi from ${submittedEnquiry.pickupCity || 'Jaipur'} to ${submittedEnquiry.dropCity || 'Jodhpur'}`
         : (submittedEnquiry.packageInterest || 'Rajasthan Tour')
@@ -116,7 +116,7 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({
             Quotation Request Received!
           </h3>
           <p className="text-sm text-slate-600">
-            Thank you, <strong className="text-slate-800">{submittedEnquiry.name}</strong>. Reference: <span className="font-mono font-bold text-amber-700 bg-amber-100 px-2 py-0.5 rounded">{submittedEnquiry.id}</span>
+            Thank you, <strong className="text-slate-800">{submittedEnquiry.name}</strong>. Reference: <span className="font-mono font-bold text-blue-700 bg-blue-100 px-2 py-0.5 rounded">{submittedEnquiry.id}</span>
           </p>
         </div>
         <p className="text-xs text-slate-500 max-w-md mx-auto leading-relaxed">
@@ -155,9 +155,9 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({
 
       {/* Package or Service Banner if prefilled */}
       {defaultPackageName && formType === 'tour' && (
-        <div className="p-3 bg-amber-50/80 border border-amber-200/80 rounded-lg text-xs flex items-center justify-between">
-          <span className="text-amber-900 font-medium">Selected Package: <strong>{defaultPackageName}</strong></span>
-          <span className="text-[10px] uppercase font-bold text-amber-800 bg-amber-200/60 px-2 py-0.5 rounded">Customizable</span>
+        <div className="p-3 bg-blue-50/80 border border-blue-200/80 rounded-lg text-xs flex items-center justify-between">
+          <span className="text-blue-900 font-medium">Selected Package: <strong>{defaultPackageName}</strong></span>
+          <span className="text-[10px] uppercase font-bold text-blue-800 bg-blue-200/60 px-2 py-0.5 rounded">Customizable</span>
         </div>
       )}
 
@@ -172,7 +172,7 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({
               value={formData.companyName}
               onChange={e => setFormData({ ...formData, companyName: e.target.value })}
               placeholder="e.g. Royal Travels Pvt Ltd"
-              className="w-full px-3 py-2 text-xs rounded-lg border border-slate-300 focus:ring-2 focus:ring-amber-500 focus:border-amber-500 outline-none"
+              className="w-full px-3 py-2 text-xs rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
             />
           </div>
           <div>
@@ -180,7 +180,7 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({
             <select
               value={formData.agencyType}
               onChange={e => setFormData({ ...formData, agencyType: e.target.value })}
-              className="w-full px-3 py-2 text-xs rounded-lg border border-slate-300 focus:ring-2 focus:ring-amber-500 outline-none bg-white"
+              className="w-full px-3 py-2 text-xs rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 outline-none bg-white"
             >
               <option value="Travel Agent">Retail Travel Agent</option>
               <option value="Outbound Tour Operator">Outbound Tour Operator</option>
@@ -197,7 +197,7 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             <div>
               <label className="block text-xs font-semibold text-slate-700 mb-1 flex items-center gap-1">
-                <MapPin className="w-3.5 h-3.5 text-amber-600" />
+                <MapPin className="w-3.5 h-3.5 text-blue-600" />
                 Pickup City / Location *
               </label>
               <input
@@ -206,12 +206,12 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({
                 value={formData.pickupCity}
                 onChange={e => setFormData({ ...formData, pickupCity: e.target.value })}
                 placeholder="e.g. Jaipur Airport / Hotel"
-                className="w-full px-3 py-2 text-xs rounded-lg border border-slate-300 focus:ring-2 focus:ring-amber-500 outline-none bg-white"
+                className="w-full px-3 py-2 text-xs rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 outline-none bg-white"
               />
             </div>
             <div>
               <label className="block text-xs font-semibold text-slate-700 mb-1 flex items-center gap-1">
-                <MapPin className="w-3.5 h-3.5 text-amber-600" />
+                <MapPin className="w-3.5 h-3.5 text-blue-600" />
                 Drop City / Destination *
               </label>
               <input
@@ -220,7 +220,7 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({
                 value={formData.dropCity}
                 onChange={e => setFormData({ ...formData, dropCity: e.target.value })}
                 placeholder="e.g. Jodhpur / Udaipur / Local"
-                className="w-full px-3 py-2 text-xs rounded-lg border border-slate-300 focus:ring-2 focus:ring-amber-500 outline-none bg-white"
+                className="w-full px-3 py-2 text-xs rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 outline-none bg-white"
               />
             </div>
           </div>
@@ -231,7 +231,7 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({
               <select
                 value={formData.tripType}
                 onChange={e => setFormData({ ...formData, tripType: e.target.value as any })}
-                className="w-full px-3 py-2 text-xs rounded-lg border border-slate-300 focus:ring-2 focus:ring-amber-500 outline-none bg-white"
+                className="w-full px-3 py-2 text-xs rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 outline-none bg-white"
               >
                 <option value="One Way">One Way Drop</option>
                 <option value="Round Trip">Round Trip</option>
@@ -240,13 +240,13 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({
             </div>
             <div>
               <label className="block text-xs font-semibold text-slate-700 mb-1 flex items-center gap-1">
-                <Car className="w-3.5 h-3.5 text-amber-600" />
+                <Car className="w-3.5 h-3.5 text-blue-600" />
                 Vehicle Model
               </label>
               <select
                 value={formData.vehicleType}
                 onChange={e => setFormData({ ...formData, vehicleType: e.target.value })}
-                className="w-full px-3 py-2 text-xs rounded-lg border border-slate-300 focus:ring-2 focus:ring-amber-500 outline-none bg-white"
+                className="w-full px-3 py-2 text-xs rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 outline-none bg-white"
               >
                 <option value="Sedan (Dzire / Etios)">Comfort Sedan (4 Seater)</option>
                 <option value="Maruti Ertiga (6 Seater)">Maruti Ertiga SUV (6 Seater)</option>
@@ -257,14 +257,14 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({
             </div>
             <div>
               <label className="block text-xs font-semibold text-slate-700 mb-1 flex items-center gap-1">
-                <Calendar className="w-3.5 h-3.5 text-amber-600" />
+                <Calendar className="w-3.5 h-3.5 text-blue-600" />
                 Travel Date
               </label>
               <input
                 type="date"
                 value={formData.travelDate}
                 onChange={e => setFormData({ ...formData, travelDate: e.target.value })}
-                className="w-full px-3 py-2 text-xs rounded-lg border border-slate-300 focus:ring-2 focus:ring-amber-500 outline-none bg-white"
+                className="w-full px-3 py-2 text-xs rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 outline-none bg-white"
               />
             </div>
           </div>
@@ -275,7 +275,7 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         <div>
           <label className="block text-xs font-semibold text-slate-700 mb-1 flex items-center gap-1">
-            <User className="w-3.5 h-3.5 text-amber-600" />
+            <User className="w-3.5 h-3.5 text-blue-600" />
             Your Full Name *
           </label>
           <input
@@ -284,13 +284,13 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({
             value={formData.name}
             onChange={e => setFormData({ ...formData, name: e.target.value })}
             placeholder="e.g. Rahul Verma"
-            className="w-full px-3 py-2 text-xs rounded-lg border border-slate-300 focus:ring-2 focus:ring-amber-500 outline-none"
+            className="w-full px-3 py-2 text-xs rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 outline-none"
           />
         </div>
 
         <div>
           <label className="block text-xs font-semibold text-slate-700 mb-1 flex items-center gap-1">
-            <Phone className="w-3.5 h-3.5 text-amber-600" />
+            <Phone className="w-3.5 h-3.5 text-blue-600" />
             Phone / WhatsApp Number *
           </label>
           <input
@@ -298,8 +298,8 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({
             required
             value={formData.phone}
             onChange={e => setFormData({ ...formData, phone: e.target.value })}
-            placeholder="e.g. +91 77289 XXXXX"
-            className="w-full px-3 py-2 text-xs rounded-lg border border-slate-300 focus:ring-2 focus:ring-amber-500 outline-none"
+            placeholder="e.g. +91 XXXXX XXXXX"
+            className="w-full px-3 py-2 text-xs rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 outline-none"
           />
         </div>
       </div>
@@ -307,7 +307,7 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         <div>
           <label className="block text-xs font-semibold text-slate-700 mb-1 flex items-center gap-1">
-            <Mail className="w-3.5 h-3.5 text-amber-600" />
+            <Mail className="w-3.5 h-3.5 text-blue-600" />
             Email Address *
           </label>
           <input
@@ -316,13 +316,13 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({
             value={formData.email}
             onChange={e => setFormData({ ...formData, email: e.target.value })}
             placeholder="name@example.com"
-            className="w-full px-3 py-2 text-xs rounded-lg border border-slate-300 focus:ring-2 focus:ring-amber-500 outline-none"
+            className="w-full px-3 py-2 text-xs rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 outline-none"
           />
         </div>
 
         <div>
           <label className="block text-xs font-semibold text-slate-700 mb-1 flex items-center gap-1">
-            <Users className="w-3.5 h-3.5 text-amber-600" />
+            <Users className="w-3.5 h-3.5 text-blue-600" />
             Number of Travellers
           </label>
           <input
@@ -331,7 +331,7 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({
             max="100"
             value={formData.travellers}
             onChange={e => setFormData({ ...formData, travellers: parseInt(e.target.value) || 1 })}
-            className="w-full px-3 py-2 text-xs rounded-lg border border-slate-300 focus:ring-2 focus:ring-amber-500 outline-none"
+            className="w-full px-3 py-2 text-xs rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 outline-none"
           />
         </div>
       </div>
@@ -344,7 +344,7 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({
             <select
               value={formData.travelMonth}
               onChange={e => setFormData({ ...formData, travelMonth: e.target.value })}
-              className="w-full px-3 py-2 text-xs rounded-lg border border-slate-300 focus:ring-2 focus:ring-amber-500 outline-none bg-white"
+              className="w-full px-3 py-2 text-xs rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 outline-none bg-white"
             >
               <option value="October 2026">October 2026</option>
               <option value="November 2026">November 2026 (Pushkar Fair)</option>
@@ -361,7 +361,7 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({
             <select
               value={formData.hotelTier}
               onChange={e => setFormData({ ...formData, hotelTier: e.target.value as any })}
-              className="w-full px-3 py-2 text-xs rounded-lg border border-slate-300 focus:ring-2 focus:ring-amber-500 outline-none bg-white"
+              className="w-full px-3 py-2 text-xs rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 outline-none bg-white"
             >
               <option value="Deluxe (4 Star)">Deluxe (4 Star Boutique)</option>
               <option value="Luxury Heritage (5 Star)">Luxury Heritage (5 Star Palaces)</option>
@@ -376,7 +376,7 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({
               type="date"
               value={formData.arrivalDate}
               onChange={e => setFormData({ ...formData, arrivalDate: e.target.value })}
-              className="w-full px-3 py-2 text-xs rounded-lg border border-slate-300 focus:ring-2 focus:ring-amber-500 outline-none"
+              className="w-full px-3 py-2 text-xs rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 outline-none"
             />
           </div>
         </div>
@@ -392,7 +392,7 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({
           value={formData.message}
           onChange={e => setFormData({ ...formData, message: e.target.value })}
           placeholder="Any specific cities you want to add, elderly family members, vegetarian food preferences, or pickup flight details..."
-          className="w-full px-3 py-2 text-xs rounded-lg border border-slate-300 focus:ring-2 focus:ring-amber-500 outline-none resize-none"
+          className="w-full px-3 py-2 text-xs rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 outline-none resize-none"
         />
       </div>
 
@@ -403,10 +403,10 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({
           id="privacy-consent"
           checked={formData.consent}
           onChange={e => setFormData({ ...formData, consent: e.target.checked })}
-          className="mt-0.5 rounded text-amber-600 focus:ring-amber-500 h-3.5 w-3.5"
+          className="mt-0.5 rounded text-blue-600 focus:ring-blue-500 h-3.5 w-3.5"
         />
         <label htmlFor="privacy-consent" className="text-[11px] text-slate-500 leading-tight">
-          I agree to be contacted by Organise My Trip local specialists via WhatsApp/Email for the customized quotation. We never spam.
+          I agree to be contacted by Vanshika Tour & Travel local specialists via WhatsApp/Email for the customized quotation. We never spam.
         </label>
       </div>
 
@@ -415,7 +415,7 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({
         <button
           type="submit"
           disabled={isSubmitting}
-          className="w-full py-3 px-6 rounded-lg bg-amber-600 hover:bg-amber-700 active:bg-amber-800 text-white font-bold text-sm shadow-md transition-all flex items-center justify-center gap-2 cursor-pointer disabled:opacity-60"
+          className="w-full py-3 px-6 rounded-lg bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white font-bold text-sm shadow-md transition-all flex items-center justify-center gap-2 cursor-pointer disabled:opacity-60"
         >
           {isSubmitting ? (
             <span>Sending to Rajasthan Operations...</span>

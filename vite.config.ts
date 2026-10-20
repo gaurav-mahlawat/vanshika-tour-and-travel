@@ -5,7 +5,7 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
-    base: '/organise-my-trip/',
+    base: '/vanshika-tour-and-travel/',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
@@ -31,9 +31,9 @@ export default defineConfig(() => {
       // the production server.js rewrite middleware.
       server.middlewares.use((req, _res, next) => {
         const url = req.url || '';
-        const m = url.match(/^\/(?:organise-my-trip\/)?[\w-]+(?:\/[\w-]+)*\/((?:images|assets)\/.+)$/);
+        const m = url.match(/^\/(?:vanshika-tour-and-travel\/)?[\w-]+(?:\/[\w-]+)*\/((?:images|assets)\/.+)$/);
         if (m) {
-          req.url = `/organise-my-trip/${m[1]}`;
+          req.url = `/vanshika-tour-and-travel/${m[1]}`;
         }
         next();
       });

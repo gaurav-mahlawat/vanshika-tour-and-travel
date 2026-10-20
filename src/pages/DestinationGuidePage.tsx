@@ -14,7 +14,7 @@ export const DestinationGuidePage: React.FC = () => {
     return (
       <div className="w-full py-20 text-center text-slate-600">
         <p className="font-serif text-xl font-bold text-slate-900">Destination not found</p>
-        <button onClick={() => navigate('/')} className="mt-4 text-amber-800 font-bold text-sm">Back to Home →</button>
+        <button onClick={() => navigate('/')} className="mt-4 text-blue-800 font-bold text-sm">Back to Home →</button>
       </div>
     );
   }
@@ -40,7 +40,7 @@ export const DestinationGuidePage: React.FC = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/80 to-slate-950/40" />
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 text-xs font-semibold backdrop-blur-xs">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-300 text-xs font-semibold backdrop-blur-xs">
             <Sparkles className="w-3.5 h-3.5" />
             <span>{tagline}</span>
           </div>
@@ -56,25 +56,25 @@ export const DestinationGuidePage: React.FC = () => {
           <div className="flex flex-wrap items-center gap-y-2 gap-x-6 text-xs text-slate-300 pt-2">
             {bestMonths && (
               <div className="flex items-center gap-1.5">
-                <Calendar className="w-4 h-4 text-amber-400" />
+                <Calendar className="w-4 h-4 text-blue-400" />
                 <span>Best Months: <strong>{bestMonths}</strong></span>
               </div>
             )}
             {dest.idealDays && (
               <div className="flex items-center gap-1.5">
-                <Clock className="w-4 h-4 text-amber-400" />
+                <Clock className="w-4 h-4 text-blue-400" />
                 <span>Ideal Stay: <strong>{dest.idealDays}</strong></span>
               </div>
             )}
             {dest.connectivity?.airport && (
               <div className="flex items-center gap-1.5">
-                <Plane className="w-4 h-4 text-amber-400" />
+                <Plane className="w-4 h-4 text-blue-400" />
                 <span>Airport: <strong>{dest.connectivity.airport}</strong></span>
               </div>
             )}
             {dest.connectivity?.railway && (
               <div className="flex items-center gap-1.5">
-                <Train className="w-4 h-4 text-amber-400" />
+                <Train className="w-4 h-4 text-blue-400" />
                 <span>Rail: <strong>{dest.connectivity.railway}</strong></span>
               </div>
             )}
@@ -91,7 +91,7 @@ export const DestinationGuidePage: React.FC = () => {
             <div className="space-y-4">
               <div className="flex justify-between items-end">
                 <div>
-                  <span className="text-xs font-bold uppercase tracking-wider text-amber-800 block">Must-Visit Monuments</span>
+                  <span className="text-xs font-bold uppercase tracking-wider text-blue-800 block">Must-Visit Monuments</span>
                   <h2 className="text-2xl font-bold font-serif text-slate-900">
                     Top Sightseeing Attractions in {dest.name}
                   </h2>
@@ -120,7 +120,7 @@ export const DestinationGuidePage: React.FC = () => {
                     </div>
 
                     <div className="p-4 flex flex-col grow space-y-2">
-                      <h3 className="font-serif font-bold text-base text-slate-900 group-hover:text-amber-800 transition-colors">
+                      <h3 className="font-serif font-bold text-base text-slate-900 group-hover:text-blue-800 transition-colors">
                         {att.name}
                       </h3>
                       <p className="text-xs text-slate-500 line-clamp-2 leading-relaxed grow">
@@ -128,7 +128,7 @@ export const DestinationGuidePage: React.FC = () => {
                       </p>
                       <div className="pt-2 border-t border-stone-100 flex justify-between items-center text-xs">
                         <span className="text-slate-400 text-[11px]">Entry: {att.entryFee}</span>
-                        <span className="text-amber-800 font-bold text-[11px] flex items-center gap-0.5 group-hover:translate-x-0.5 transition-transform">
+                        <span className="text-blue-800 font-bold text-[11px] flex items-center gap-0.5 group-hover:translate-x-0.5 transition-transform">
                           Sight Guide →
                         </span>
                       </div>
@@ -151,13 +151,13 @@ export const DestinationGuidePage: React.FC = () => {
                       onClick={() => navigate(`/package-detail/${pkg.slug}`)}
                       className="bg-white p-4 rounded-xl border border-stone-200 shadow-xs hover:shadow-md transition-all cursor-pointer space-y-2"
                     >
-                      <span className="text-[10px] font-bold text-amber-800">{pkg.durationDays} Days / {pkg.durationNights} Nights</span>
-                      <h4 className="font-serif font-bold text-xs text-slate-900 hover:text-amber-800 line-clamp-2">
+                      <span className="text-[10px] font-bold text-blue-800">{pkg.durationDays} Days / {pkg.durationNights} Nights</span>
+                      <h4 className="font-serif font-bold text-xs text-slate-900 hover:text-blue-800 line-clamp-2">
                         {pkg.title}
                       </h4>
                       <div className="flex justify-between items-center text-xs pt-1 border-t border-stone-100">
-                        <strong className="text-amber-700">Price on Request</strong>
-                        <span className="text-amber-800 font-bold text-[11px]">View →</span>
+                        <strong className="text-blue-700">Price on Request</strong>
+                        <span className="text-blue-800 font-bold text-[11px]">View →</span>
                       </div>
                     </div>
                   ))}
@@ -176,14 +176,14 @@ export const DestinationGuidePage: React.FC = () => {
                     <button
                       key={d.id}
                       onClick={() => navigate(`/tour-by-destination/${d.slug}`)}
-                      className="px-3.5 py-1.5 rounded-full bg-white border border-stone-200 text-xs font-semibold text-slate-700 hover:bg-amber-50 hover:text-amber-800 hover:border-amber-200 transition-colors"
+                      className="px-3.5 py-1.5 rounded-full bg-white border border-stone-200 text-xs font-semibold text-slate-700 hover:bg-blue-50 hover:text-blue-800 hover:border-blue-200 transition-colors"
                     >
                       {d.name}
                     </button>
                   ))}
                   <button
                     onClick={() => navigate('/tour-by-destination')}
-                    className="px-3.5 py-1.5 rounded-full bg-amber-600 text-white text-xs font-bold hover:bg-amber-700 transition-colors flex items-center gap-1"
+                    className="px-3.5 py-1.5 rounded-full bg-blue-600 text-white text-xs font-bold hover:bg-blue-700 transition-colors flex items-center gap-1"
                   >
                     All 9 Guides <ArrowRight className="w-3 h-3" />
                   </button>
@@ -195,7 +195,7 @@ export const DestinationGuidePage: React.FC = () => {
           {/* Right Lead Capture Box */}
           <div className="lg:col-span-4 sticky top-24 space-y-6">
             <div className="bg-white p-6 rounded-3xl border border-stone-200 shadow-xl space-y-4">
-              <span className="text-[10px] uppercase font-bold text-amber-800 tracking-wider block">
+              <span className="text-[10px] uppercase font-bold text-blue-800 tracking-wider block">
                 Local Tour Operator
               </span>
               <h3 className="text-xl font-bold font-serif text-slate-900">

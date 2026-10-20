@@ -32,11 +32,11 @@ export const ActivitiesPage: React.FC = () => {
     <div className="w-full bg-stone-50 py-10 sm:py-14">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
         {/* Header Banner */}
-        <div className="bg-gradient-to-r from-slate-900 via-amber-950 to-slate-900 text-white p-8 sm:p-12 rounded-3xl relative overflow-hidden shadow-xl">
+        <div className="bg-gradient-to-r from-slate-900 via-blue-950 to-slate-900 text-white p-8 sm:p-12 rounded-3xl relative overflow-hidden shadow-xl">
           <div className="absolute inset-0 bg-cover bg-center opacity-25" style={{ backgroundImage: `url('images/activities/desert-experiences.webp')` }} />
-          <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-amber-950/75 to-slate-900/90" />
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-blue-950/75 to-slate-900/90" />
           <div className="relative z-10 max-w-3xl space-y-3">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 text-xs font-semibold">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-300 text-xs font-semibold">
               <Sparkles className="w-3.5 h-3.5" />
               <span>12 Handpicked Authentic Experiences</span>
             </div>
@@ -59,7 +59,7 @@ export const ActivitiesPage: React.FC = () => {
                 onClick={() => setSelectedCategory(cat)}
                 className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-colors ${
                   selectedCategory === cat
-                    ? 'bg-amber-700 text-white'
+                    ? 'bg-blue-700 text-white'
                     : 'bg-stone-100 text-slate-600 hover:bg-stone-200'
                 }`}
               >
@@ -76,7 +76,7 @@ export const ActivitiesPage: React.FC = () => {
               value={searchQuery}
               onChange={e => setSearchQuery(e.target.value)}
               placeholder="Search experiences..."
-              className="w-full pl-9 pr-3 py-1.5 text-xs rounded-lg border border-stone-300 focus:ring-2 focus:ring-amber-500 outline-none"
+              className="w-full pl-9 pr-3 py-1.5 text-xs rounded-lg border border-stone-300 focus:ring-2 focus:ring-blue-500 outline-none"
             />
           </div>
         </div>
@@ -99,23 +99,23 @@ export const ActivitiesPage: React.FC = () => {
                   referrerPolicy="no-referrer"
                   loading="lazy"
                 />
-                <span className="absolute top-3 left-3 text-[10px] font-bold px-2.5 py-0.5 rounded-full bg-slate-900/80 text-amber-300 backdrop-blur-xs border border-white/10">
+                <span className="absolute top-3 left-3 text-[10px] font-bold px-2.5 py-0.5 rounded-full bg-slate-900/80 text-blue-300 backdrop-blur-xs border border-white/10">
                   {act.category}
                 </span>
-                <span className="absolute bottom-3 right-3 text-[10px] font-bold px-2.5 py-0.5 rounded-full bg-amber-600 text-white">
+                <span className="absolute bottom-3 right-3 text-[10px] font-bold px-2.5 py-0.5 rounded-full bg-blue-600 text-white">
                   {act.duration}
                 </span>
               </div>
 
               <div className="p-5 flex flex-col grow space-y-3">
                 <div className="text-[11px] text-slate-400 flex items-center gap-1">
-                  <MapPin className="w-3.5 h-3.5 text-amber-700" />
+                  <MapPin className="w-3.5 h-3.5 text-blue-700" />
                   <span>{act.location}</span>
                 </div>
 
                 <h3 
                   onClick={() => navigate(`/activity-detail/${act.slug}`)}
-                  className="font-serif font-bold text-base text-slate-900 group-hover:text-amber-800 transition-colors line-clamp-2 cursor-pointer"
+                  className="font-serif font-bold text-base text-slate-900 group-hover:text-blue-800 transition-colors line-clamp-2 cursor-pointer"
                 >
                   {act.title}
                 </h3>
@@ -128,7 +128,7 @@ export const ActivitiesPage: React.FC = () => {
                 <div className="space-y-1 pt-1">
                   {act.highlights.slice(0, 2).map((hl, i) => (
                     <div key={i} className="text-[11px] text-slate-600 flex items-start gap-1.5">
-                      <Check className="w-3 h-3 text-amber-600 shrink-0 mt-0.5" />
+                      <Check className="w-3 h-3 text-blue-600 shrink-0 mt-0.5" />
                       <span className="line-clamp-1">{hl}</span>
                     </div>
                   ))}
@@ -138,7 +138,7 @@ export const ActivitiesPage: React.FC = () => {
                 <div className="pt-3 border-t border-stone-100 flex items-center justify-between">
                   <div>
                     <span className="text-[10px] text-slate-400 block">Booking</span>
-                    <strong className="text-base font-bold text-amber-700">Quote on Request</strong>
+                    <strong className="text-base font-bold text-blue-700">Quote on Request</strong>
                   </div>
 
                   <div className="flex items-center gap-2">
@@ -150,7 +150,7 @@ export const ActivitiesPage: React.FC = () => {
                     </button>
                     <button
                       onClick={() => openEnquiryModal({ type: 'tour', message: `Inquiring for experience: ${act.title}` })}
-                      className="px-3.5 py-1.5 rounded-lg text-xs font-bold bg-amber-600 hover:bg-amber-700 text-white shadow-xs"
+                      className="px-3.5 py-1.5 rounded-lg text-xs font-bold bg-blue-600 hover:bg-blue-700 text-white shadow-xs"
                     >
                       Book
                     </button>

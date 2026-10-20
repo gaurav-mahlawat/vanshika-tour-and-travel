@@ -13,7 +13,7 @@ import {
   ChevronRight, 
   Check, 
   Calendar, 
-  Phone, 
+  MessageCircle, 
   Sparkles, 
   Compass, 
   HelpCircle,
@@ -44,8 +44,8 @@ export const HomePage: React.FC = () => {
 
   const FAQS = [
     {
-      q: 'Why should I book with Organise My Trip rather than standard online portals?',
-      a: 'Organise My Trip is a local Rajasthan travel company based in Jaipur, Rajasthan. Our ready-to-sell circuits are operated directly with our own verified chauffeurs and hotel partners across the state, and every itinerary is fully customisable by hotel category, vehicle, meal plan, safari availability and travel dates.'
+      q: 'Why should I book with Vanshika Tour & Travel rather than standard online portals?',
+      a: 'Vanshika Tour & Travel is a local Rajasthan travel company based in Jaipur, Rajasthan. Our ready-to-sell circuits are operated directly with our own verified chauffeurs and hotel partners across the state, and every itinerary is fully customisable by hotel category, vehicle, meal plan, safari availability and travel dates.'
     },
     {
       q: 'Are your Rajasthan tour packages 100% private and customizable?',
@@ -83,14 +83,14 @@ export const HomePage: React.FC = () => {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-24 z-10 w-full">
           <div className="max-w-3xl space-y-6">
             {/* Tagline Badge */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/20 border border-amber-400/40 text-amber-300 text-xs font-semibold backdrop-blur-xs">
-              <Sparkles className="w-4 h-4 text-amber-400" />
-              <span>Organise My Trip · Rajasthan Experiences</span>
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-500/20 border border-blue-400/40 text-blue-300 text-xs font-semibold backdrop-blur-xs">
+              <Sparkles className="w-4 h-4 text-blue-400" />
+              <span>Vanshika Tour & Travel · Rajasthan Experiences</span>
             </div>
 
             {/* Main Headline */}
             <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold font-serif leading-[1.15] text-white tracking-tight">
-              Authentic Rajasthan Journeys, <span className="text-amber-400">Crafted Locally.</span>
+              Authentic Rajasthan Journeys, <span className="text-blue-400">Crafted Locally.</span>
             </h1>
 
             <p className="text-base sm:text-lg text-slate-200 leading-relaxed max-w-2xl font-normal">
@@ -101,7 +101,7 @@ export const HomePage: React.FC = () => {
             <div className="flex flex-wrap items-center gap-3.5 pt-2">
               <button
                 onClick={() => navigate('/packages')}
-                className="px-6 py-3.5 rounded-xl bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold text-sm shadow-xl hover:shadow-amber-500/20 transition-all flex items-center gap-2 cursor-pointer transform hover:-translate-y-0.5"
+                className="px-6 py-3.5 rounded-xl bg-blue-500 hover:bg-blue-600 text-slate-950 font-bold text-sm shadow-xl hover:shadow-blue-500/20 transition-all flex items-center gap-2 cursor-pointer transform hover:-translate-y-0.5"
                 id="hero-explore-packages-cta"
               >
                 <Compass className="w-4 h-4 text-slate-950" />
@@ -113,7 +113,7 @@ export const HomePage: React.FC = () => {
                 className="px-6 py-3.5 rounded-xl bg-white/10 hover:bg-white/20 text-white font-semibold text-sm border border-white/30 backdrop-blur-xs transition-all flex items-center gap-2 cursor-pointer"
                 id="hero-plan-trip-cta"
               >
-                <Calendar className="w-4 h-4 text-amber-400" />
+                <Calendar className="w-4 h-4 text-blue-400" />
                 <span>Customise My Itinerary</span>
               </button>
 
@@ -121,7 +121,7 @@ export const HomePage: React.FC = () => {
                 onClick={() => navigate('/taxi-service')}
                 className="px-5 py-3.5 rounded-xl text-slate-200 hover:text-white text-sm font-medium transition-colors flex items-center gap-1.5"
               >
-                <Car className="w-4 h-4 text-amber-400" />
+                <Car className="w-4 h-4 text-blue-400" />
                 <span>Book Intercity Taxi →</span>
               </button>
             </div>
@@ -129,15 +129,15 @@ export const HomePage: React.FC = () => {
             {/* Trust bullet markers */}
             <div className="pt-6 flex flex-wrap items-center gap-y-2 gap-x-6 text-xs text-slate-300 font-medium">
               <div className="flex items-center gap-1.5">
-                <Check className="w-4 h-4 text-amber-400" />
+                <Check className="w-4 h-4 text-blue-400" />
                 <span>Jaipur & Udaipur Offices</span>
               </div>
               <div className="flex items-center gap-1.5">
-                <Check className="w-4 h-4 text-amber-400" />
+                <Check className="w-4 h-4 text-blue-400" />
                 <span>100% Private Chauffeurs</span>
               </div>
               <div className="flex items-center gap-1.5">
-                <Check className="w-4 h-4 text-amber-400" />
+                <Check className="w-4 h-4 text-blue-400" />
                 <span>No Advance Hidden Fees</span>
               </div>
             </div>
@@ -146,25 +146,25 @@ export const HomePage: React.FC = () => {
       </section>
 
       {/* 2. TRUST STRIP */}
-      <section className="bg-amber-800 text-amber-50 py-5 px-4 shadow-inner">
+      <section className="bg-blue-800 text-blue-50 py-5 px-4 shadow-inner">
         <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-around gap-6 text-center text-xs sm:text-sm font-medium">
           <div className="flex items-center gap-2">
-            <Award className="w-5 h-5 text-amber-300 shrink-0" />
+            <Award className="w-5 h-5 text-blue-300 shrink-0" />
             <span>Based in Jaipur, Rajasthan, India</span>
           </div>
-          <div className="hidden sm:block w-px h-6 bg-amber-700/60" />
+          <div className="hidden sm:block w-px h-6 bg-blue-700/60" />
           <div className="flex items-center gap-2">
-            <Users className="w-5 h-5 text-amber-300 shrink-0" />
+            <Users className="w-5 h-5 text-blue-300 shrink-0" />
             <span>100% Private & Customisable Tours</span>
           </div>
-          <div className="hidden md:block w-px h-6 bg-amber-700/60" />
+          <div className="hidden md:block w-px h-6 bg-blue-700/60" />
           <div className="flex items-center gap-2">
-            <Car className="w-5 h-5 text-amber-300 shrink-0" />
+            <Car className="w-5 h-5 text-blue-300 shrink-0" />
             <span>3★ / 4★ / 5★ Hotel Options</span>
           </div>
-          <div className="hidden lg:block w-px h-6 bg-amber-700/60" />
+          <div className="hidden lg:block w-px h-6 bg-blue-700/60" />
           <div className="flex items-center gap-2">
-            <Star className="w-5 h-5 text-amber-300 fill-amber-300 shrink-0" />
+            <Star className="w-5 h-5 text-blue-300 fill-blue-300 shrink-0" />
             <span>Heritage · Wildlife · Lakes · Desert · Luxury</span>
           </div>
         </div>
@@ -175,7 +175,7 @@ export const HomePage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-4 mb-10">
             <div>
-              <span className="text-xs font-bold uppercase tracking-wider text-amber-800 block mb-1">
+              <span className="text-xs font-bold uppercase tracking-wider text-blue-800 block mb-1">
                 Explore The Royal Realm
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold font-serif text-slate-900">
@@ -187,7 +187,7 @@ export const HomePage: React.FC = () => {
             </div>
             <button 
               onClick={() => navigate('/tour-by-destination')}
-              className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-800 hover:text-amber-900 group"
+              className="inline-flex items-center gap-1.5 text-xs font-bold text-blue-800 hover:text-blue-900 group"
             >
               <span>Explore All 9 Guides</span>
               <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
@@ -210,16 +210,16 @@ export const HomePage: React.FC = () => {
                     loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent" />
-                  <span className="absolute top-3 right-3 text-[10px] font-bold px-2 py-0.5 rounded-full bg-black/40 text-amber-300 backdrop-blur-xs border border-white/10">
+                  <span className="absolute top-3 right-3 text-[10px] font-bold px-2 py-0.5 rounded-full bg-black/40 text-blue-300 backdrop-blur-xs border border-white/10">
                     {(dest.topAttractions ?? dest.attractions ?? []).length} Sights
                   </span>
                 </div>
 
                 <div className="p-4 space-y-1">
-                  <div className="text-[11px] font-bold text-amber-800 tracking-wide uppercase">
+                  <div className="text-[11px] font-bold text-blue-800 tracking-wide uppercase">
                     {dest.tagline || dest.nickname}
                   </div>
-                  <h3 className="font-serif font-bold text-base text-slate-900 group-hover:text-amber-800 transition-colors">
+                  <h3 className="font-serif font-bold text-base text-slate-900 group-hover:text-blue-800 transition-colors">
                     {dest.name}
                   </h3>
                   <p className="text-xs text-slate-500 line-clamp-2">
@@ -227,7 +227,7 @@ export const HomePage: React.FC = () => {
                   </p>
                   <div className="pt-2 flex items-center justify-between text-[11px] text-slate-400 font-medium">
                     <span>Ideal: {dest.bestMonths || dest.bestTimeToVisit}</span>
-                    <span className="text-amber-700 font-bold group-hover:translate-x-1 transition-transform">
+                    <span className="text-blue-700 font-bold group-hover:translate-x-1 transition-transform">
                       View →
                     </span>
                   </div>
@@ -242,7 +242,7 @@ export const HomePage: React.FC = () => {
       <section className="py-16 sm:py-20 bg-white" id="tour-packages">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-10 space-y-2">
-              <span className="text-xs font-bold uppercase tracking-wider text-amber-800 block">
+              <span className="text-xs font-bold uppercase tracking-wider text-blue-800 block">
                 Handcrafted Royal Itineraries
               </span>
               <h2 className="text-2xl sm:text-4xl font-bold font-serif text-slate-900">
@@ -260,7 +260,7 @@ export const HomePage: React.FC = () => {
                   onClick={() => setPackageCategory(cat)}
                   className={`px-3.5 py-1.5 rounded-full text-xs font-semibold transition-colors ${
                     packageCategory === cat
-                      ? 'bg-amber-700 text-white shadow-xs'
+                      ? 'bg-blue-700 text-white shadow-xs'
                       : 'bg-stone-100 text-slate-600 hover:bg-stone-200'
                   }`}
                 >
@@ -292,18 +292,18 @@ export const HomePage: React.FC = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent" />
                   
                   {/* Category Pill */}
-                  <span className="absolute top-3 left-3 px-2.5 py-0.5 rounded-full bg-slate-900/80 text-amber-300 text-[10px] font-bold backdrop-blur-xs border border-white/10">
+                  <span className="absolute top-3 left-3 px-2.5 py-0.5 rounded-full bg-slate-900/80 text-blue-300 text-[10px] font-bold backdrop-blur-xs border border-white/10">
                     {pkg.category}
                   </span>
 
                   {/* Duration Pill */}
-                  <span className="absolute top-3 right-3 px-2.5 py-0.5 rounded-full bg-amber-600 text-white text-[11px] font-bold shadow-xs">
+                  <span className="absolute top-3 right-3 px-2.5 py-0.5 rounded-full bg-blue-600 text-white text-[11px] font-bold shadow-xs">
                     {pkg.durationDays} Days / {pkg.durationNights} Nights
                   </span>
 
                   {/* Route ribbon */}
                   <div className="absolute bottom-3 left-3 right-3 text-xs text-white font-medium flex items-center gap-1.5 truncate">
-                    <MapPin className="w-3.5 h-3.5 text-amber-400 shrink-0" />
+                    <MapPin className="w-3.5 h-3.5 text-blue-400 shrink-0" />
                     <span className="truncate">{pkg.route}</span>
                   </div>
                 </div>
@@ -312,7 +312,7 @@ export const HomePage: React.FC = () => {
                 <div className="p-5 flex flex-col grow space-y-3">
                   <h3 
                     onClick={() => navigate(`/package-detail/${pkg.slug}`)}
-                    className="font-serif font-bold text-base text-slate-900 group-hover:text-amber-800 transition-colors line-clamp-2 cursor-pointer"
+                    className="font-serif font-bold text-base text-slate-900 group-hover:text-blue-800 transition-colors line-clamp-2 cursor-pointer"
                   >
                     {pkg.title}
                   </h3>
@@ -325,7 +325,7 @@ export const HomePage: React.FC = () => {
                   <div className="space-y-1 pt-1 grow">
                     {pkg.highlights.slice(0, 2).map((hl, i) => (
                       <div key={i} className="text-[11px] text-slate-600 flex items-start gap-1.5">
-                        <Check className="w-3 h-3 text-amber-600 shrink-0 mt-0.5" />
+                        <Check className="w-3 h-3 text-blue-600 shrink-0 mt-0.5" />
                         <span className="line-clamp-1">{hl}</span>
                       </div>
                     ))}
@@ -335,7 +335,7 @@ export const HomePage: React.FC = () => {
                   <div className="pt-3 border-t border-stone-100 flex items-center justify-between">
                     <div>
                       <span className="text-[10px] text-slate-400 uppercase font-semibold block">Custom Quotation</span>
-                      <span className="text-sm font-bold text-amber-700">Price on Request</span>
+                      <span className="text-sm font-bold text-blue-700">Price on Request</span>
                     </div>
 
                     <div className="flex items-center gap-2">
@@ -347,7 +347,7 @@ export const HomePage: React.FC = () => {
                       </button>
                       <button
                         onClick={() => openEnquiryModal({ type: 'tour', packageInterest: pkg.title })}
-                        className="px-3.5 py-1.5 rounded-lg text-xs font-bold bg-amber-600 hover:bg-amber-700 text-white shadow-xs transition-colors"
+                        className="px-3.5 py-1.5 rounded-lg text-xs font-bold bg-blue-600 hover:bg-blue-700 text-white shadow-xs transition-colors"
                       >
                         Enquire
                       </button>
@@ -364,7 +364,7 @@ export const HomePage: React.FC = () => {
               className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white text-sm font-bold shadow-md transition-colors"
             >
               <span>View All 8 Curated Tour Packages</span>
-              <ArrowRight className="w-4 h-4 text-amber-400" />
+              <ArrowRight className="w-4 h-4 text-blue-400" />
             </button>
           </div>
         </div>
@@ -375,7 +375,7 @@ export const HomePage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-6 mb-12">
             <div className="space-y-2 max-w-2xl">
-              <span className="text-xs font-bold uppercase tracking-wider text-amber-400 block">
+              <span className="text-xs font-bold uppercase tracking-wider text-blue-400 block">
                 Commercial Tourist Fleet · Verified Chauffeurs
               </span>
               <h2 className="text-2xl sm:text-4xl font-bold font-serif text-white">
@@ -388,7 +388,7 @@ export const HomePage: React.FC = () => {
             <div className="flex items-center gap-3">
               <button
                 onClick={() => openEnquiryModal({ type: 'taxi' })}
-                className="px-5 py-2.5 rounded-lg bg-amber-500 hover:bg-amber-600 text-slate-950 text-xs font-bold transition-colors"
+                className="px-5 py-2.5 rounded-lg bg-blue-500 hover:bg-blue-600 text-slate-950 text-xs font-bold transition-colors"
               >
                 Instant Taxi Quote
               </button>
@@ -415,7 +415,7 @@ export const HomePage: React.FC = () => {
                     className="w-full h-full object-cover"
                     referrerPolicy="no-referrer"
                   />
-                  <span className="absolute bottom-2 left-2 bg-black/60 backdrop-blur-xs text-amber-300 text-[10px] font-bold px-2 py-0.5 rounded">
+                  <span className="absolute bottom-2 left-2 bg-black/60 backdrop-blur-xs text-blue-300 text-[10px] font-bold px-2 py-0.5 rounded">
                     {veh.category}
                   </span>
                 </div>
@@ -427,13 +427,13 @@ export const HomePage: React.FC = () => {
 
                 <div className="text-xs text-slate-300 flex items-center justify-between border-t border-slate-700/60 pt-2">
                   <span>Seats: <strong>{veh.seatingCapacity} Pax</strong></span>
-                  <span>AC: <strong className="text-amber-400">{veh.ac ? 'Yes' : 'No'}</strong></span>
+                  <span>AC: <strong className="text-blue-400">{veh.ac ? 'Yes' : 'No'}</strong></span>
                 </div>
 
                 <ul className="text-[11px] text-slate-400 space-y-1 grow">
                   {veh.features.slice(0, 3).map((feat, i) => (
                     <li key={i} className="flex items-center gap-1.5">
-                      <Check className="w-3 h-3 text-amber-400 shrink-0" />
+                      <Check className="w-3 h-3 text-blue-400 shrink-0" />
                       <span className="truncate">{feat}</span>
                     </li>
                   ))}
@@ -441,7 +441,7 @@ export const HomePage: React.FC = () => {
 
                 <button
                   onClick={() => openEnquiryModal({ type: 'taxi', vehicleType: veh.name })}
-                  className="w-full py-2 rounded-lg bg-amber-600/20 hover:bg-amber-600 text-amber-300 hover:text-white border border-amber-500/30 text-xs font-bold transition-all"
+                  className="w-full py-2 rounded-lg bg-blue-600/20 hover:bg-blue-600 text-blue-300 hover:text-white border border-blue-500/30 text-xs font-bold transition-all"
                 >
                   Book This Vehicle
                 </button>
@@ -453,7 +453,7 @@ export const HomePage: React.FC = () => {
           <div className="bg-slate-800/60 rounded-xl border border-slate-700 overflow-hidden">
             <div className="p-4 sm:p-5 border-b border-slate-700 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
               <h3 className="text-sm font-bold text-white flex items-center gap-2">
-                <Car className="w-4 h-4 text-amber-400" />
+                <Car className="w-4 h-4 text-blue-400" />
                 <span>Popular Intercity Taxi Routes</span>
               </h3>
             </div>
@@ -473,7 +473,7 @@ export const HomePage: React.FC = () => {
                       <td className="p-3.5 font-semibold text-white">
                         <div className="flex items-center gap-1.5">
                           <span>{route.fromCity}</span>
-                          <span className="text-amber-400">→</span>
+                          <span className="text-blue-400">→</span>
                           <span>{route.toCity}</span>
                         </div>
                         <span className="text-[10px] text-slate-400 font-normal block">{route.highway}</span>
@@ -488,7 +488,7 @@ export const HomePage: React.FC = () => {
                             pickupCity: route.fromCity, 
                             dropCity: route.toCity 
                           })}
-                          className="px-3 py-1 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold rounded text-[11px] transition-colors"
+                          className="px-3 py-1 bg-blue-500 hover:bg-blue-600 text-slate-950 font-bold rounded text-[11px] transition-colors"
                         >
                           Book Cab
                         </button>
@@ -507,7 +507,7 @@ export const HomePage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-4 mb-10">
             <div>
-              <span className="text-xs font-bold uppercase tracking-wider text-amber-800 block mb-1">
+              <span className="text-xs font-bold uppercase tracking-wider text-blue-800 block mb-1">
                 Authentic Royal & Desert Adventures
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold font-serif text-slate-900">
@@ -519,7 +519,7 @@ export const HomePage: React.FC = () => {
             </div>
             <button
               onClick={() => navigate('/activities')}
-              className="inline-flex items-center gap-1 text-xs font-bold text-amber-800 hover:text-amber-900"
+              className="inline-flex items-center gap-1 text-xs font-bold text-blue-800 hover:text-blue-900"
             >
               <span>Explore All 12 Experiences</span>
               <ArrowRight className="w-3.5 h-3.5" />
@@ -541,20 +541,20 @@ export const HomePage: React.FC = () => {
                     referrerPolicy="no-referrer"
                     loading="lazy"
                   />
-                  <span className="absolute top-2.5 left-2.5 text-[10px] font-bold px-2 py-0.5 rounded-full bg-slate-900/80 text-amber-300">
+                  <span className="absolute top-2.5 left-2.5 text-[10px] font-bold px-2 py-0.5 rounded-full bg-slate-900/80 text-blue-300">
                     {act.category}
                   </span>
-                  <span className="absolute bottom-2.5 right-2.5 text-[10px] font-bold px-2 py-0.5 rounded-full bg-amber-600 text-white">
+                  <span className="absolute bottom-2.5 right-2.5 text-[10px] font-bold px-2 py-0.5 rounded-full bg-blue-600 text-white">
                     {act.duration}
                   </span>
                 </div>
 
                 <div className="p-4 flex flex-col grow space-y-2">
                   <div className="text-[11px] text-slate-400 flex items-center gap-1">
-                    <MapPin className="w-3 h-3 text-amber-700" />
+                    <MapPin className="w-3 h-3 text-blue-700" />
                     <span>{act.location}</span>
                   </div>
-                  <h3 className="font-serif font-bold text-sm text-slate-900 group-hover:text-amber-800 transition-colors line-clamp-2">
+                  <h3 className="font-serif font-bold text-sm text-slate-900 group-hover:text-blue-800 transition-colors line-clamp-2">
                     {act.title}
                   </h3>
                   <p className="text-xs text-slate-500 line-clamp-2 leading-relaxed grow">
@@ -562,7 +562,7 @@ export const HomePage: React.FC = () => {
                   </p>
                   <div className="pt-2 border-t border-stone-100 flex items-center justify-between text-xs">
                     <span className="text-[10px] text-slate-400">Price on Request</span>
-                    <span className="text-amber-700 font-bold text-[11px] group-hover:translate-x-0.5 transition-transform">
+                    <span className="text-blue-700 font-bold text-[11px] group-hover:translate-x-0.5 transition-transform">
                       View Details →
                     </span>
                   </div>
@@ -578,7 +578,7 @@ export const HomePage: React.FC = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-stone-50 p-6 sm:p-8 rounded-3xl border border-stone-200 space-y-4">
             <div className="space-y-1">
-              <span className="text-xs font-bold uppercase tracking-wider text-amber-800 block">
+              <span className="text-xs font-bold uppercase tracking-wider text-blue-800 block">
                 Tailor-Made Tour Consultation
               </span>
               <h3 className="text-2xl font-bold font-serif text-slate-900">
@@ -598,11 +598,11 @@ export const HomePage: React.FC = () => {
       <section className="py-16 sm:py-20 bg-stone-100/60 border-t border-stone-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-12 space-y-2">
-              <span className="text-xs font-bold uppercase tracking-wider text-amber-800 block">
-                The Organise My Trip Advantage
+              <span className="text-xs font-bold uppercase tracking-wider text-blue-800 block">
+                The Vanshika Tour & Travel Advantage
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold font-serif text-slate-900">
-                Why Travelers Choose Organise My Trip
+                Why Travelers Choose Vanshika Tour & Travel
               </h2>
               <p className="text-sm text-slate-600">
                 We are rooted on the ground in Jaipur, Rajasthan. Here is what separates our private journeys from generic aggregator portals.
@@ -614,7 +614,7 @@ export const HomePage: React.FC = () => {
               {
                 icon: ShieldCheck,
                 title: 'Local Jaipur Operations',
-                desc: 'Organise My Trip is based in Jaipur, Rajasthan, India. On the road, our local operations team is just a call away.'
+                desc: 'Vanshika Tour & Travel is based in Jaipur, Rajasthan, India. On the road, our local operations team is just a call away.'
               },
               {
                 icon: Car,
@@ -645,7 +645,7 @@ export const HomePage: React.FC = () => {
               const Icon = pillar.icon;
               return (
                 <div key={i} className="bg-white p-6 rounded-2xl border border-stone-200 shadow-xs space-y-3">
-                  <div className="w-12 h-12 rounded-xl bg-amber-50 border border-amber-200 flex items-center justify-center text-amber-800">
+                  <div className="w-12 h-12 rounded-xl bg-blue-50 border border-blue-200 flex items-center justify-center text-blue-800">
                     <Icon className="w-6 h-6" />
                   </div>
                   <h3 className="font-serif font-bold text-base text-slate-900">{pillar.title}</h3>
@@ -661,15 +661,15 @@ export const HomePage: React.FC = () => {
       <section className="py-16 sm:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-12 space-y-2">
-            <span className="text-xs font-bold uppercase tracking-wider text-amber-800 block">
+            <span className="text-xs font-bold uppercase tracking-wider text-blue-800 block">
               Guest Stories
             </span>
             <h2 className="text-2xl sm:text-3xl font-bold font-serif text-slate-900">
               Trusted by Travellers Worldwide
             </h2>
-            <div className="flex items-center justify-center gap-1 pt-1 text-amber-500">
+            <div className="flex items-center justify-center gap-1 pt-1 text-blue-500">
               {[...Array(5)].map((_, i) => (
-                <Star key={i} className="w-4 h-4 fill-amber-500" />
+                <Star key={i} className="w-4 h-4 fill-blue-500" />
               ))}
               <span className="text-xs font-bold text-slate-800 ml-2">4.9 / 5.0 Average Guest Rating</span>
             </div>
@@ -679,22 +679,22 @@ export const HomePage: React.FC = () => {
             {[
               {
                 image: 'images/packages/jaisalmer-golden-fort.jpg',
-                quote: 'Organise My Trip organized our 8-day family trip across Jaipur, Ranthambhore and Jodhpur. Our chauffeur was exceptionally polite, punctual, and safe. The desert camp in Jaisalmer was magical!',
-                author: 'Dr. Alok & Priya Sen',
+                quote: 'Vanshika Tour & Travel organized our 8-day family trip across Jaipur, Ranthambhore and Jodhpur. Our chauffeur was exceptionally polite, punctual, and safe. The desert camp in Jaisalmer was magical!',
+                author: 'Family from New Delhi',
                 origin: 'Mumbai, India',
                 trip: 'Royal Triangle & Wildlife'
               },
               {
                 image: 'images/packages/udaipur-city-palace.jpg',
-                quote: 'Coming from London for our 25th anniversary, we wanted authentic luxury without hassle. Organise My Trip booked wonderful boutique havelis and the private Lake Pichola boat ride at sunset was unforgettable.',
-                author: 'Richard & Catherine Davies',
+                quote: 'Coming from London for our 25th anniversary, we wanted authentic luxury without hassle. Vanshika Tour & Travel booked wonderful boutique havelis and the private Lake Pichola boat ride at sunset was unforgettable.',
+                author: 'Couple from London',
                 origin: 'London, United Kingdom',
                 trip: 'Palaces, Lakes & Desert'
               },
               {
                 image: 'images/packages/ranthambore-safari-960.webp',
                 quote: 'Booked an Innova Crysta for our corporate client from Delhi Airport to Jaipur and Ranthambhore. Top-notch sanitized vehicle, clear billing, and responsive WhatsApp coordinator.',
-                author: 'Sunil Aggarwal (Apex Holidays)',
+                author: 'Travel Agency Partner',
                 origin: 'New Delhi, India',
                 trip: 'Corporate Group & Safari Transfer'
               }
@@ -711,9 +711,9 @@ export const HomePage: React.FC = () => {
                 </div>
                 <div className="p-6 flex flex-col grow justify-between space-y-4">
                   <div className="space-y-3">
-                    <div className="flex text-amber-500 gap-0.5">
+                    <div className="flex text-blue-500 gap-0.5">
                       {[...Array(5)].map((_, idx) => (
-                        <Star key={idx} className="w-4 h-4 fill-amber-500" />
+                        <Star key={idx} className="w-4 h-4 fill-blue-500" />
                       ))}
                     </div>
                     <p className="text-xs text-slate-700 leading-relaxed italic">
@@ -723,7 +723,7 @@ export const HomePage: React.FC = () => {
 
                   <div className="pt-3 border-t border-stone-200 text-xs">
                     <strong className="text-slate-900 block font-semibold">{rev.author}</strong>
-                    <span className="text-slate-500 text-[11px] block">{rev.origin} · <span className="text-amber-800 font-medium">{rev.trip}</span></span>
+                    <span className="text-slate-500 text-[11px] block">{rev.origin} · <span className="text-blue-800 font-medium">{rev.trip}</span></span>
                   </div>
                 </div>
               </div>
@@ -737,7 +737,7 @@ export const HomePage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-4 mb-10">
             <div>
-              <span className="text-xs font-bold uppercase tracking-wider text-amber-800 block mb-1">
+              <span className="text-xs font-bold uppercase tracking-wider text-blue-800 block mb-1">
                 Rajasthan Travel Inspiration
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold font-serif text-slate-900">
@@ -749,7 +749,7 @@ export const HomePage: React.FC = () => {
             </div>
             <button
               onClick={() => navigate('/blog')}
-              className="inline-flex items-center gap-1 text-xs font-bold text-amber-800 hover:text-amber-900"
+              className="inline-flex items-center gap-1 text-xs font-bold text-blue-800 hover:text-blue-900"
             >
               <span>View All 14 Guides</span>
               <ArrowRight className="w-3.5 h-3.5" />
@@ -771,7 +771,7 @@ export const HomePage: React.FC = () => {
                     referrerPolicy="no-referrer"
                     loading="lazy"
                   />
-                  <span className="absolute top-3 left-3 text-[10px] font-bold px-2 py-0.5 rounded-full bg-slate-900/80 text-amber-300">
+                  <span className="absolute top-3 left-3 text-[10px] font-bold px-2 py-0.5 rounded-full bg-slate-900/80 text-blue-300">
                     {post.category}
                   </span>
                 </div>
@@ -782,13 +782,13 @@ export const HomePage: React.FC = () => {
                     <span>•</span>
                     <span>{post.readTime}</span>
                   </div>
-                  <h3 className="font-serif font-bold text-base text-slate-900 group-hover:text-amber-800 transition-colors line-clamp-2">
+                  <h3 className="font-serif font-bold text-base text-slate-900 group-hover:text-blue-800 transition-colors line-clamp-2">
                     {post.title}
                   </h3>
                   <p className="text-xs text-slate-500 line-clamp-2 leading-relaxed grow">
                     {post.excerpt}
                   </p>
-                  <div className="pt-2 text-xs font-bold text-amber-800 flex items-center gap-1 group-hover:translate-x-0.5 transition-transform">
+                  <div className="pt-2 text-xs font-bold text-blue-800 flex items-center gap-1 group-hover:translate-x-0.5 transition-transform">
                     <span>Read Guide</span>
                     <ArrowRight className="w-3 h-3" />
                   </div>
@@ -803,7 +803,7 @@ export const HomePage: React.FC = () => {
       <section className="py-16 sm:py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10 space-y-2">
-            <span className="text-xs font-bold uppercase tracking-wider text-amber-800 block">
+            <span className="text-xs font-bold uppercase tracking-wider text-blue-800 block">
               Clear & Transparent Answers
             </span>
             <h2 className="text-2xl sm:text-3xl font-bold font-serif text-slate-900">
@@ -824,11 +824,11 @@ export const HomePage: React.FC = () => {
                 >
                   <button
                     onClick={() => setOpenFaqIndex(isOpen ? null : index)}
-                    className="w-full text-left p-4 sm:p-5 flex items-center justify-between gap-4 font-semibold text-sm text-slate-900 hover:text-amber-800"
+                    className="w-full text-left p-4 sm:p-5 flex items-center justify-between gap-4 font-semibold text-sm text-slate-900 hover:text-blue-800"
                   >
                     <span>{faq.q}</span>
                     <ChevronDown
-                      className={`w-4 h-4 shrink-0 text-amber-700 transition-transform ${
+                      className={`w-4 h-4 shrink-0 text-blue-700 transition-transform ${
                         isOpen ? 'rotate-180' : ''
                       }`}
                     />
@@ -846,10 +846,10 @@ export const HomePage: React.FC = () => {
           <div className="mt-8 text-center text-xs text-slate-500">
             Have a specific custom question?{' '}
             <a
-              href={getWhatsAppLink('Hi Organise My Trip, I have a custom question regarding my Rajasthan trip plan.')}
+              href={getWhatsAppLink('Hi Vanshika Tour & Travel, I have a custom question regarding my Rajasthan trip plan.')}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-amber-800 font-bold hover:underline"
+              className="text-blue-800 font-bold hover:underline"
             >
               Ask our Jaipur Concierge on WhatsApp →
             </a>
@@ -858,10 +858,10 @@ export const HomePage: React.FC = () => {
       </section>
 
       {/* 12. B2B PARTNERSHIP BANNER (Section 13) */}
-      <section className="bg-gradient-to-r from-amber-900 via-amber-950 to-slate-950 text-white py-12 px-4">
+      <section className="bg-gradient-to-r from-blue-900 via-blue-950 to-slate-950 text-white py-12 px-4">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="space-y-2 max-w-2xl text-center md:text-left">
-            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 text-xs font-semibold">
+            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-500/20 text-blue-300 text-xs font-semibold">
               <Building2 className="w-3.5 h-3.5" />
               <span>B2B Rajasthan DMC Partner</span>
             </div>
@@ -869,14 +869,14 @@ export const HomePage: React.FC = () => {
               Are You a Travel Agent or Outbound Tour Operator?
             </h3>
             <p className="text-xs text-slate-300 leading-relaxed">
-              Partner with Organise My Trip for confidential net B2B tariffs, ready-to-sell Rajasthan circuits, white-label client service, and on-ground handling across Rajasthan.
+              Partner with Vanshika Tour & Travel for confidential net B2B tariffs, ready-to-sell Rajasthan circuits, white-label client service, and on-ground handling across Rajasthan.
             </p>
           </div>
 
           <div className="flex flex-col sm:flex-row items-center gap-3 shrink-0">
             <button
               onClick={() => navigate('/b2b-rajasthan-dmc')}
-              className="px-6 py-3 rounded-xl bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold text-xs shadow-lg transition-colors"
+              className="px-6 py-3 rounded-xl bg-blue-500 hover:bg-blue-600 text-slate-950 font-bold text-xs shadow-lg transition-colors"
             >
               Explore B2B DMC Services
             </button>
@@ -891,9 +891,9 @@ export const HomePage: React.FC = () => {
       </section>
 
       {/* 13. FINAL BOTTOM CTA BANNER */}
-      <section className="py-16 bg-amber-50 border-t border-amber-200/60 text-center px-4">
+      <section className="py-16 bg-blue-50 border-t border-blue-200/60 text-center px-4">
         <div className="max-w-3xl mx-auto space-y-4">
-          <span className="text-xs font-bold uppercase tracking-wider text-amber-800 block">
+          <span className="text-xs font-bold uppercase tracking-wider text-blue-800 block">
             Make Your Rajasthan Journey Your Way
           </span>
           <h2 className="text-2xl sm:text-4xl font-bold font-serif text-slate-900">
@@ -905,16 +905,18 @@ export const HomePage: React.FC = () => {
           <div className="pt-2 flex flex-wrap items-center justify-center gap-3">
             <button
               onClick={() => openEnquiryModal({ type: 'tour' })}
-              className="px-8 py-3.5 rounded-xl bg-amber-700 hover:bg-amber-800 text-white font-bold text-sm shadow-md transition-all"
+              className="px-8 py-3.5 rounded-xl bg-blue-700 hover:bg-blue-800 text-white font-bold text-sm shadow-md transition-all"
             >
               Get My Free Custom Quotation
             </button>
             <a
-              href="tel:+918905523568"
+              href={getWhatsAppLink('Hi Vanshika Tour & Travel, I have a custom question regarding my Rajasthan trip plan.')}
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-6 py-3.5 rounded-xl bg-white hover:bg-stone-50 border border-stone-300 text-slate-800 font-semibold text-sm flex items-center gap-2"
             >
-              <Phone className="w-4 h-4 text-amber-700" />
-              <span>Call / WhatsApp +91 89055 23568</span>
+              <MessageCircle className="w-4 h-4 text-emerald-600" />
+              <span>Chat on WhatsApp</span>
             </a>
           </div>
         </div>

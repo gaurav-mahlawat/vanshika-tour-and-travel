@@ -29,13 +29,13 @@ export const CookieBanner: React.FC = () => {
     <div className="fixed bottom-0 left-0 right-0 z-40 bg-slate-900/95 backdrop-blur-md text-white border-t border-slate-800 py-3 px-4 shadow-2xl animate-in slide-in-from-bottom duration-300">
       <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3 text-xs">
         <div className="flex items-center gap-2 text-slate-300">
-          <Shield className="w-4 h-4 text-amber-400 shrink-0" />
+          <Shield className="w-4 h-4 text-blue-400 shrink-0" />
           <span>
             We use essential cookies to deliver custom trip quotations and optimize your private tour booking experience.
           </span>
           <button 
             onClick={() => navigate('/privacy-policy')}
-            className="text-amber-400 hover:underline shrink-0"
+            className="text-blue-400 hover:underline shrink-0"
           >
             Learn more
           </button>
@@ -50,7 +50,7 @@ export const CookieBanner: React.FC = () => {
           </button>
           <button
             onClick={handleAccept}
-            className="px-4 py-1.5 rounded-lg bg-amber-600 hover:bg-amber-700 text-white font-semibold text-xs transition-colors"
+            className="px-4 py-1.5 rounded-lg bg-blue-600 hover:bg-blue-700 text-white font-semibold text-xs transition-colors"
           >
             Accept All
           </button>

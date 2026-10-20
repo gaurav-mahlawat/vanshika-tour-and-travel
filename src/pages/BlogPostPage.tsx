@@ -18,9 +18,9 @@ export const BlogPostPage: React.FC = () => {
       {/* Breadcrumb */}
       <div className="bg-white border-b border-stone-200 py-3 px-4">
         <div className="max-w-7xl mx-auto flex items-center gap-2 text-xs text-slate-500">
-          <button onClick={() => navigate('/')} className="hover:text-amber-800">Home</button>
+          <button onClick={() => navigate('/')} className="hover:text-blue-800">Home</button>
           <span>/</span>
-          <button onClick={() => navigate('/blog')} className="hover:text-amber-800">Travel Guide</button>
+          <button onClick={() => navigate('/blog')} className="hover:text-blue-800">Travel Guide</button>
           <span>/</span>
           <span className="text-slate-800 font-semibold truncate">{post.title}</span>
         </div>
@@ -28,7 +28,7 @@ export const BlogPostPage: React.FC = () => {
 
       {/* Hero Header */}
       <div className="max-w-4xl mx-auto px-4 pt-10 pb-6 space-y-4">
-        <span className="px-3 py-1 rounded-full bg-amber-100 text-amber-800 text-xs font-bold">
+        <span className="px-3 py-1 rounded-full bg-blue-100 text-blue-800 text-xs font-bold">
           {post.category}
         </span>
 
@@ -38,17 +38,17 @@ export const BlogPostPage: React.FC = () => {
 
         <div className="flex flex-wrap items-center gap-4 text-xs text-slate-500 pb-4 border-b border-stone-200">
           <div className="flex items-center gap-1.5">
-            <User className="w-3.5 h-3.5 text-amber-700" />
+            <User className="w-3.5 h-3.5 text-blue-700" />
             <span>{post.author}</span>
           </div>
           <span>•</span>
           <div className="flex items-center gap-1.5">
-            <Calendar className="w-3.5 h-3.5 text-amber-700" />
+            <Calendar className="w-3.5 h-3.5 text-blue-700" />
             <span>{post.publishedDate}</span>
           </div>
           <span>•</span>
           <div className="flex items-center gap-1.5">
-            <Clock className="w-3.5 h-3.5 text-amber-700" />
+            <Clock className="w-3.5 h-3.5 text-blue-700" />
             <span>{post.readTime}</span>
           </div>
         </div>
@@ -69,7 +69,7 @@ export const BlogPostPage: React.FC = () => {
       {/* Article Content & Lead Box */}
       <div className="max-w-4xl mx-auto px-4">
         <div className="bg-white p-6 sm:p-10 rounded-2xl border border-stone-200 shadow-xs space-y-6 text-sm text-slate-700 leading-relaxed">
-          <p className="text-base font-medium text-slate-900 border-l-4 border-amber-600 pl-4 italic">
+          <p className="text-base font-medium text-slate-900 border-l-4 border-blue-600 pl-4 italic">
             {post.excerpt}
           </p>
 
@@ -91,12 +91,12 @@ export const BlogPostPage: React.FC = () => {
         </div>
 
         {/* Lead Magnet CTA */}
-        <div className="mt-10 bg-amber-50 rounded-2xl p-6 sm:p-8 border border-amber-200 space-y-4">
+        <div className="mt-10 bg-blue-50 rounded-2xl p-6 sm:p-8 border border-blue-200 space-y-4">
           <div className="space-y-1">
-            <h3 className="text-lg font-bold font-serif text-amber-950">
+            <h3 className="text-lg font-bold font-serif text-blue-950">
               Planning a Rajasthan Trip Inspired by This Article?
             </h3>
-            <p className="text-xs text-amber-800">
+            <p className="text-xs text-blue-800">
               Let our local travel team in Jaipur build your customized route with verified heritage stays and dedicated private chauffeur.
             </p>
           </div>
@@ -115,8 +115,8 @@ export const BlogPostPage: React.FC = () => {
                 onClick={() => navigate(`/blog/${rp.slug}`)}
                 className="bg-white p-4 rounded-xl border border-stone-200 hover:shadow-md transition-all cursor-pointer space-y-2"
               >
-                <span className="text-[10px] text-amber-800 font-bold uppercase">{rp.category}</span>
-                <h4 className="font-serif font-bold text-xs text-slate-900 hover:text-amber-800 line-clamp-2">
+                <span className="text-[10px] text-blue-800 font-bold uppercase">{rp.category}</span>
+                <h4 className="font-serif font-bold text-xs text-slate-900 hover:text-blue-800 line-clamp-2">
                   {rp.title}
                 </h4>
                 <span className="text-[11px] text-slate-400 block">{rp.readTime}</span>
