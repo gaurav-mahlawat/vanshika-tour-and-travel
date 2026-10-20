@@ -80,7 +80,7 @@ export const Footer: React.FC = () => {
                 <MapPin className="w-4 h-4 text-blue-400 shrink-0 mt-0.5" />
                 <div>
                   <strong className="text-white block">Vanshika Tour & Travel:</strong>
-                  910, 7th Floor, Anchor Mall, Nr. Civil Lines Metro Station, Ajmer Road, Jaipur – 302006
+                   E-37 dronpuri, Vinayak Appartment Bhairav Nagar, vaisali Jaipur
                 </div>
               </div>
               <div className="flex items-center gap-2 text-slate-300 pt-1">

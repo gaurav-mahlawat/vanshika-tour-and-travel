@@ -36,7 +36,7 @@ export const ContactUsPage: React.FC = () => {
                 Rajasthan Experiences · Jaipur Office
               </h3>
               <p className="text-xs text-slate-600 leading-relaxed">
-                910, 7th Floor, Anchor Mall, Nr. Civil Lines Metro Station, Ajmer Road, Jaipur – 302006
+                E-37 dronpuri, Vinayak Appartment Bhairav Nagar, vaisali Jaipur
               </p>
               <div className="space-y-1.5 text-xs text-slate-600 pt-2 border-t border-stone-100">
                 <div className="flex items-center gap-2">
