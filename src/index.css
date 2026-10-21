@@ -3,18 +3,46 @@
 @theme {
   --font-serif: "Cinzel", Georgia, serif;
   --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --color-royal: #1e3a8a;
-  --color-navy: #172554;
-  --color-marigold: #2563eb;
-  --color-gold: #1d4ed8;
-  --color-terracotta: #1e40af;
-  --color-sand: #eff6ff;
-  --color-stone-50: #eef5fd;
-  --color-stone-100: #dcebfb;
-  --color-stone-200: #bfd7f2;
-  --color-stone-300: #96b8e0;
-  --color-stone-400: #6f95c2;
-  --color-stone-900: #16283f;
+  --color-royal: #6f4d15;
+  --color-navy: #1f1c13;
+  --color-marigold: #d9ac52;
+  --color-gold: #c99436;
+  --color-terracotta: #c05e33;
+  --color-sand: #f4ecdd;
+
+  /* Warm sand beige neutrals (backgrounds & borders) */
+  --color-stone-50: #fbf7ef;
+  --color-stone-100: #f4ecdd;
+  --color-stone-200: #e6d9bd;
+  --color-stone-300: #d3bf97;
+  --color-stone-400: #b09a6f;
+  --color-stone-900: #2e2619;
+
+  /* Warm gray ramp (text & dark sections) */
+  --color-slate-50: #faf8f3;
+  --color-slate-100: #f0ead9;
+  --color-slate-200: #ddd2b8;
+  --color-slate-300: #c4b594;
+  --color-slate-400: #a49672;
+  --color-slate-500: #8a7d5c;
+  --color-slate-600: #706549;
+  --color-slate-700: #58503a;
+  --color-slate-800: #3f3a2a;
+  --color-slate-900: #2c281c;
+  --color-slate-950: #1f1c13;
+
+  /* Warm gold / brown accent ramp (CTAs, highlights, headings) */
+  --color-blue-50: #fdf7ea;
+  --color-blue-100: #f8ecd2;
+  --color-blue-200: #f0dcaa;
+  --color-blue-300: #e6c67e;
+  --color-blue-400: #d9ac52;
+  --color-blue-500: #c99436;
+  --color-blue-600: #b07e24;
+  --color-blue-700: #8f641c;
+  --color-blue-800: #6f4d15;
+  --color-blue-900: #533a0f;
+  --color-blue-950: #3a2809;
 }
 
 html {
@@ -25,4 +53,3 @@ html {
 h1, h2, h3, .font-display {
   font-family: var(--font-serif);
 }
-
