@@ -915,7 +915,7 @@ export const HomePage: React.FC = () => {
               rel="noopener noreferrer"
               className="px-6 py-3.5 rounded-xl bg-white hover:bg-stone-50 border border-stone-300 text-slate-800 font-semibold text-sm flex items-center gap-2"
             >
-              <MessageCircle className="w-4 h-4 text-emerald-600" />
+              <MessageCircle className="w-4 h-4 text-blue-600" />
               <span>Chat on WhatsApp</span>
             </a>
           </div>

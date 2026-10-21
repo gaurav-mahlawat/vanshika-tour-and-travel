@@ -107,8 +107,8 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({
     }. Please share the detailed itinerary & quotation.`;
 
     return (
-      <div className="bg-emerald-50 border border-emerald-200 rounded-2xl p-6 sm:p-8 text-center space-y-4 animate-in fade-in zoom-in-95 duration-200">
-        <div className="w-14 h-14 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto shadow-xs">
+      <div className="bg-blue-50 border border-blue-200 rounded-2xl p-6 sm:p-8 text-center space-y-4 animate-in fade-in zoom-in-95 duration-200">
+        <div className="w-14 h-14 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mx-auto shadow-xs">
           <CheckCircle2 className="w-8 h-8" />
         </div>
         <div className="space-y-1">
@@ -128,7 +128,7 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({
             href={getWhatsAppLink(waText)}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold shadow-md transition-colors"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-lg bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold shadow-md transition-colors"
           >
             <MessageCircle className="w-4 h-4" />
             <span>Connect on WhatsApp Instantly</span>

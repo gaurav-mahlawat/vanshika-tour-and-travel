@@ -11,7 +11,7 @@ export const FloatingWhatsApp: React.FC = () => {
       {/* Tooltip bubble */}
       {showTooltip && (
         <div className="bg-white text-slate-800 text-xs px-3.5 py-2.5 rounded-2xl shadow-xl border border-slate-100 flex items-center gap-2 max-w-xs animate-in fade-in slide-in-from-bottom-2 duration-300">
-          <div className="w-2 h-2 rounded-full bg-emerald-500 animate-ping" />
+          <div className="w-2 h-2 rounded-full bg-blue-500 animate-ping" />
           <p className="font-medium text-[11px] leading-tight">
             Planning a Rajasthan trip? Chat with our local expert on WhatsApp!
           </p>
@@ -30,7 +30,7 @@ export const FloatingWhatsApp: React.FC = () => {
         href={getWhatsAppLink()}
         target="_blank"
         rel="noopener noreferrer"
-        className="w-14 h-14 bg-emerald-600 hover:bg-emerald-700 text-white rounded-full flex items-center justify-center shadow-xl hover:shadow-2xl transition-all transform hover:scale-110 active:scale-95 relative group"
+        className="w-14 h-14 bg-blue-600 hover:bg-blue-700 text-white rounded-full flex items-center justify-center shadow-xl hover:shadow-2xl transition-all transform hover:scale-110 active:scale-95 relative group"
         title="Chat on WhatsApp with Vanshika Tour & Travel"
         id="floating-whatsapp-cta"
       >

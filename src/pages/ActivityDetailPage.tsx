@@ -98,7 +98,7 @@ export const ActivityDetailPage: React.FC = () => {
                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-600">
                   {act.includes.map((inc, i) => (
                     <li key={i} className="flex items-center gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-emerald-600 shrink-0" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-blue-600 shrink-0" />
                       <span>{inc}</span>
                     </li>
                   ))}
@@ -125,7 +125,7 @@ export const ActivityDetailPage: React.FC = () => {
                 href={getWhatsAppLink(waMsg)}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full py-3 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold flex items-center justify-center gap-2 shadow-md transition-all"
+                className="w-full py-3 px-4 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold flex items-center justify-center gap-2 shadow-md transition-all"
               >
                 <MessageCircle className="w-4 h-4" />
                 <span>Reserve via WhatsApp</span>

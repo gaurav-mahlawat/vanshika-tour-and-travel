@@ -52,9 +52,9 @@ export const Header: React.FC = () => {
               href={getWhatsAppLink()} 
               target="_blank" 
               rel="noopener noreferrer"
-              className="flex items-center gap-1.5 hover:text-emerald-400 transition-colors text-emerald-300 font-semibold"
+              className="flex items-center gap-1.5 hover:text-blue-400 transition-colors text-blue-300 font-semibold"
             >
-              <MessageCircle className="w-3.5 h-3.5 text-emerald-400" />
+              <MessageCircle className="w-3.5 h-3.5 text-blue-400" />
               <span>WhatsApp Us</span>
             </a>
           </div>
@@ -394,7 +394,7 @@ export const Header: React.FC = () => {
               href={getWhatsAppLink()} 
               target="_blank" 
               rel="noopener noreferrer"
-              className="w-full py-2.5 text-center bg-emerald-600 text-white rounded-lg font-semibold text-xs flex items-center justify-center gap-2"
+              className="w-full py-2.5 text-center bg-blue-600 text-white rounded-lg font-semibold text-xs flex items-center justify-center gap-2"
             >
               <MessageCircle className="w-4 h-4" />
               Direct WhatsApp Support

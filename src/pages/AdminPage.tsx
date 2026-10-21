@@ -413,7 +413,7 @@ export const AdminPage: React.FC = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/85 to-slate-900/95" />
           <div className="relative z-10 space-y-1">
             <div className="flex items-center gap-2">
-              <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse" />
+              <span className="w-2.5 h-2.5 rounded-full bg-blue-400 animate-pulse" />
               <span className="text-[11px] font-bold text-blue-300 uppercase tracking-wider">Internal Operations CRM</span>
             </div>
             <h1 className="text-2xl sm:text-3xl font-bold font-serif">
@@ -423,7 +423,7 @@ export const AdminPage: React.FC = () => {
               Vanshika Tour & Travel · Lead management & website content CRUD with REST API backend.
             </p>
             <div className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-[10px] font-bold ${
-              data.apiAvailable ? 'bg-emerald-500/15 text-emerald-300 border border-emerald-500/30' : 'bg-blue-500/15 text-blue-300 border border-blue-500/30'
+              data.apiAvailable ? 'bg-blue-500/15 text-blue-300 border border-blue-500/30' : 'bg-blue-500/15 text-blue-300 border border-blue-500/30'
             }`}>
               {data.apiAvailable ? <Wifi className="w-3 h-3" /> : <WifiOff className="w-3 h-3" />}
               <span>{data.apiAvailable ? 'Backend API Connected' : 'Offline Mode (Local Fallback)'}</span>
@@ -469,13 +469,13 @@ export const AdminPage: React.FC = () => {
                 <span className="text-xs text-blue-700 block font-medium">Contacted</span>
                 <div className="text-2xl font-bold font-serif text-blue-900 mt-1">{stats.contacted}</div>
               </div>
-              <div className="bg-white p-4 rounded-2xl border border-purple-100 shadow-xs">
-                <span className="text-xs text-purple-700 block font-medium">Quote Dispatched</span>
-                <div className="text-2xl font-bold font-serif text-purple-900 mt-1">{stats.quoted}</div>
+              <div className="bg-white p-4 rounded-2xl border border-blue-100 shadow-xs">
+                <span className="text-xs text-blue-700 block font-medium">Quote Dispatched</span>
+                <div className="text-2xl font-bold font-serif text-blue-900 mt-1">{stats.quoted}</div>
               </div>
-              <div className="bg-white p-4 rounded-2xl border border-emerald-200 bg-emerald-50/40 shadow-xs">
-                <span className="text-xs text-emerald-800 block font-bold">Confirmed Booking</span>
-                <div className="text-2xl font-bold font-serif text-emerald-900 mt-1">{stats.confirmed}</div>
+              <div className="bg-white p-4 rounded-2xl border border-blue-200 bg-blue-50/40 shadow-xs">
+                <span className="text-xs text-blue-800 block font-bold">Confirmed Booking</span>
+                <div className="text-2xl font-bold font-serif text-blue-900 mt-1">{stats.confirmed}</div>
               </div>
             </div>
 
@@ -567,13 +567,13 @@ export const AdminPage: React.FC = () => {
                           <span className={`px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase ${
                             enq.type === 'tour' ? 'bg-blue-100 text-blue-900' :
                             enq.type === 'taxi' ? 'bg-blue-100 text-blue-900' :
-                            'bg-purple-100 text-purple-900'
+                            'bg-blue-100 text-blue-900'
                           }`}>
                             {enq.type}
                           </span>
                           <h3 className="font-bold text-base text-slate-900">{enq.fullName}</h3>
                           {enq.agencyName && (
-                            <span className="text-xs text-purple-800 font-semibold bg-purple-50 px-2 py-0.5 rounded">
+                            <span className="text-xs text-blue-800 font-semibold bg-blue-50 px-2 py-0.5 rounded">
                               Agency: {enq.agencyName}
                             </span>
                           )}
@@ -589,8 +589,8 @@ export const AdminPage: React.FC = () => {
                             className={`text-xs font-bold px-2.5 py-1 rounded-lg border outline-none cursor-pointer ${
                               enq.status === 'new' ? 'bg-blue-100 text-blue-950 border-blue-300' :
                               enq.status === 'contacted' ? 'bg-blue-50 text-blue-900 border-blue-200' :
-                              enq.status === 'quoted' ? 'bg-purple-50 text-purple-900 border-purple-200' :
-                              enq.status === 'confirmed' ? 'bg-emerald-100 text-emerald-900 border-emerald-300' :
+                              enq.status === 'quoted' ? 'bg-blue-50 text-blue-900 border-blue-200' :
+                              enq.status === 'confirmed' ? 'bg-blue-100 text-blue-900 border-blue-300' :
                               'bg-stone-100 text-slate-600 border-stone-200'
                             }`}
                           >
@@ -653,7 +653,7 @@ export const AdminPage: React.FC = () => {
                           href={waLink}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="px-3 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold flex items-center gap-1.5 transition-colors"
+                          className="px-3 py-1.5 rounded-lg bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold flex items-center gap-1.5 transition-colors"
                         >
                           <MessageCircle className="w-3.5 h-3.5" />
                           <span>Reply on WhatsApp</span>

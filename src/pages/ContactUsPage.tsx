@@ -61,19 +61,19 @@ export const ContactUsPage: React.FC = () => {
             </div>
 
             {/* Direct WhatsApp Box */}
-            <div className="bg-emerald-50 p-6 rounded-2xl border border-emerald-200 space-y-3">
-              <h4 className="font-bold text-sm text-emerald-950 flex items-center gap-2">
-                <MessageCircle className="w-4 h-4 text-emerald-600" />
+            <div className="bg-blue-50 p-6 rounded-2xl border border-blue-200 space-y-3">
+              <h4 className="font-bold text-sm text-blue-950 flex items-center gap-2">
+                <MessageCircle className="w-4 h-4 text-blue-600" />
                 <span>Instant Travel Support via WhatsApp</span>
               </h4>
-              <p className="text-xs text-emerald-800 leading-relaxed">
+              <p className="text-xs text-blue-800 leading-relaxed">
                 Need urgent quote or flight delay assistance? Chat directly with our senior trip coordinators on WhatsApp. Average response time: under 5 minutes.
               </p>
               <a
                 href={getWhatsAppLink("Hello Vanshika Tour & Travel, I need assistance with travel planning in Rajasthan.")}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-xs font-bold transition-colors"
+                className="inline-flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-xl text-xs font-bold transition-colors"
               >
                 <span>Chat with Trip Coordinator</span>
               </a>

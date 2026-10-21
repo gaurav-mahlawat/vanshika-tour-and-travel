@@ -121,7 +121,7 @@ export const TaxiRouteDetailPage: React.FC = () => {
               </div>
 
               <div className="pt-2 text-[11px] text-slate-500 space-y-1">
-                <div className="flex items-center gap-1.5 text-emerald-700 font-semibold">
+                <div className="flex items-center gap-1.5 text-blue-700 font-semibold">
                   <Check className="w-3.5 h-3.5" />
                   <span>Includes: FASTag toll fees, state boundary taxes, fuel, and driver night fee.</span>
                 </div>
@@ -152,7 +152,7 @@ export const TaxiRouteDetailPage: React.FC = () => {
                   href={getWhatsAppLink(waMsg)}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold flex items-center justify-center gap-2 transition-colors"
+                  className="w-full py-2.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold flex items-center justify-center gap-2 transition-colors"
                 >
                   <MessageCircle className="w-4 h-4" />
                   <span>Book on WhatsApp Instantly</span>

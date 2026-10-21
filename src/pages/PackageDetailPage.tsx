@@ -63,7 +63,7 @@ export const PackageDetailPage: React.FC = () => {
             <span className="px-3 py-1 rounded-full bg-white/10 text-blue-300 text-xs font-semibold backdrop-blur-xs border border-white/10">
               {pkg.category}
             </span>
-            <span className="px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 text-xs font-semibold border border-emerald-500/30">
+            <span className="px-3 py-1 rounded-full bg-blue-500/20 text-blue-300 text-xs font-semibold border border-blue-500/30">
               100% Private & Tailor-Made
             </span>
           </div>
@@ -182,14 +182,14 @@ export const PackageDetailPage: React.FC = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {/* Inclusions */}
               <div className="bg-white p-6 rounded-2xl border border-stone-200 shadow-xs space-y-3">
-                <h3 className="font-serif font-bold text-base text-emerald-800 flex items-center gap-2">
-                  <Check className="w-5 h-5 text-emerald-600" />
+                <h3 className="font-serif font-bold text-base text-blue-800 flex items-center gap-2">
+                  <Check className="w-5 h-5 text-blue-600" />
                   <span>Package Inclusions</span>
                 </h3>
                 <ul className="space-y-2 text-xs text-slate-700">
                   {pkg.inclusions.map((inc, i) => (
                     <li key={i} className="flex items-start gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-emerald-600 shrink-0 mt-1.5" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-blue-600 shrink-0 mt-1.5" />
                       <span>{inc}</span>
                     </li>
                   ))}
@@ -281,7 +281,7 @@ export const PackageDetailPage: React.FC = () => {
                 href={getWhatsAppLink(waMessage)}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full py-3 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold flex items-center justify-center gap-2 shadow-md transition-all"
+                className="w-full py-3 px-4 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold flex items-center justify-center gap-2 shadow-md transition-all"
               >
                 <MessageCircle className="w-4 h-4" />
                 <span>Discuss This Itinerary on WhatsApp</span>

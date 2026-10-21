@@ -144,7 +144,7 @@ export const SeoLandingPage: React.FC = () => {
                 href={getWhatsAppLink(`Hi Vanshika Tour & Travel, I am inquiring about "${landing.title}". Please share details and best quotation.`)}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold flex items-center justify-center gap-2 transition-colors"
+                className="w-full py-2.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold flex items-center justify-center gap-2 transition-colors"
               >
                 <MessageCircle className="w-4 h-4" />
                 <span>Chat on WhatsApp</span>
